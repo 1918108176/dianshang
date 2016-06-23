@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045B46541D1B7FEF00145380 /* DJMyTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B464F1D1B7FEF00145380 /* DJMyTableHeaderView.m */; };
+		045B46551D1B7FEF00145380 /* DJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46511D1B7FEF00145380 /* DJTableView.m */; };
+		045B46561D1B7FEF00145380 /* DJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46531D1B7FEF00145380 /* DJTableViewCell.m */; };
+		045B465D1D1B80F400145380 /* UMThirdLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B465C1D1B80F400145380 /* UMThirdLogin.m */; };
+		045B46601D1B80FD00145380 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B465F1D1B80FD00145380 /* BaseViewController.m */; };
+		045B46631D1B810800145380 /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46621D1B810800145380 /* view.m */; };
+		045B46681D1B8B9100145380 /* DJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46671D1B8B9100145380 /* DJScrollView.m */; };
+		045B466C1D1B8F7700145380 /* DJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B466B1D1B8F7700145380 /* DJModel.m */; };
+		045B46701D1BC18100145380 /* DJButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B466F1D1BC18100145380 /* DJButtonView.m */; };
+		046523091D12C2A20036E70B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523081D12C2A20036E70B /* main.m */; };
+		0465230C1D12C2A20036E70B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465230B1D12C2A20036E70B /* AppDelegate.m */; };
+		046523141D12C2A20036E70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046523131D12C2A20036E70B /* Assets.xcassets */; };
+		046523171D12C2A20036E70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046523151D12C2A20036E70B /* LaunchScreen.storyboard */; };
+		046523221D12C2A20036E70B /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523211D12C2A20036E70B /* _____Tests.m */; };
+		0465232D1D12C2A20036E70B /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465232C1D12C2A20036E70B /* _____UITests.m */; };
+		0465235E1D12C2F20036E70B /* DJAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523421D12C2F20036E70B /* DJAddViewController.m */; };
+		0465235F1D12C2F20036E70B /* DJClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523441D12C2F20036E70B /* DJClassViewController.m */; };
+		046523601D12C2F20036E70B /* DJMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523461D12C2F20036E70B /* DJMyViewController.m */; };
+		046523611D12C2F20036E70B /* DJNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523481D12C2F20036E70B /* DJNavigationViewController.m */; };
+		046523621D12C2F20036E70B /* DJOpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465234A1D12C2F20036E70B /* DJOpenViewController.m */; };
+		046523631D12C2F20036E70B /* DJShopingCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465234C1D12C2F20036E70B /* DJShopingCarViewController.m */; };
+		046523641D12C2F20036E70B /* DJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465234E1D12C2F20036E70B /* DJTabBarViewController.m */; };
+		046523651D12C2F20036E70B /* DJTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523501D12C2F20036E70B /* DJTimeViewController.m */; };
+		046523661D12C2F20036E70B /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523521D12C2F20036E70B /* FirstView.m */; };
+		0465236A1D12C2F20036E70B /* views.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0465235A1D12C2F20036E70B /* views.plist */; };
+		0B7DAAA90D5EA866F2A9B947 /* libPods-电商 项目UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CF2210C61CC0B26926E8EC /* libPods-电商 项目UITests.a */; };
+		7D64240D39B2FB220F604D8F /* libPods-电商 项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDC098EAC5B9B8DCF41A908 /* libPods-电商 项目.a */; };
+		B2036026F6FF579542A8710B /* libPods-电商 项目Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0465231E1D12C2A20036E70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046522FC1D12C2A20036E70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046523031D12C2A20036E70B;
+			remoteInfo = "电商 项目";
+		};
+		046523291D12C2A20036E70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046522FC1D12C2A20036E70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046523031D12C2A20036E70B;
+			remoteInfo = "电商 项目";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045B464E1D1B7FEF00145380 /* DJMyTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMyTableHeaderView.h; sourceTree = "<group>"; };
+		045B464F1D1B7FEF00145380 /* DJMyTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMyTableHeaderView.m; sourceTree = "<group>"; };
+		045B46501D1B7FEF00145380 /* DJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJTableView.h; sourceTree = "<group>"; };
+		045B46511D1B7FEF00145380 /* DJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJTableView.m; sourceTree = "<group>"; };
+		045B46521D1B7FEF00145380 /* DJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJTableViewCell.h; sourceTree = "<group>"; };
+		045B46531D1B7FEF00145380 /* DJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJTableViewCell.m; sourceTree = "<group>"; };
+		045B465B1D1B80F400145380 /* UMThirdLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMThirdLogin.h; sourceTree = "<group>"; };
+		045B465C1D1B80F400145380 /* UMThirdLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMThirdLogin.m; sourceTree = "<group>"; };
+		045B465E1D1B80FD00145380 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		045B465F1D1B80FD00145380 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		045B46611D1B810800145380 /* view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
+		045B46621D1B810800145380 /* view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
+		045B46661D1B8B9100145380 /* DJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJScrollView.h; sourceTree = "<group>"; };
+		045B46671D1B8B9100145380 /* DJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJScrollView.m; sourceTree = "<group>"; };
+		045B466A1D1B8F7700145380 /* DJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJModel.h; sourceTree = "<group>"; };
+		045B466B1D1B8F7700145380 /* DJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJModel.m; sourceTree = "<group>"; };
+		045B466E1D1BC18100145380 /* DJButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJButtonView.h; sourceTree = "<group>"; };
+		045B466F1D1BC18100145380 /* DJButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJButtonView.m; sourceTree = "<group>"; };
+		046523041D12C2A20036E70B /* 电商 项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电商 项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		046523081D12C2A20036E70B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0465230A1D12C2A20036E70B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0465230B1D12C2A20036E70B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		046523131D12C2A20036E70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		046523161D12C2A20036E70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046523181D12C2A20036E70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0465231D1D12C2A20036E70B /* 电商 项目Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "电商 项目Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		046523211D12C2A20036E70B /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		046523231D12C2A20036E70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046523281D12C2A20036E70B /* 电商 项目UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "电商 项目UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0465232C1D12C2A20036E70B /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		0465232E1D12C2A20036E70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0465233A1D12C2B30036E70B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		046523411D12C2F20036E70B /* DJAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJAddViewController.h; path = "电商项目/DJAddViewController.h"; sourceTree = "<group>"; };
+		046523421D12C2F20036E70B /* DJAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJAddViewController.m; path = "电商项目/DJAddViewController.m"; sourceTree = "<group>"; };
+		046523431D12C2F20036E70B /* DJClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJClassViewController.h; path = "电商项目/DJClassViewController.h"; sourceTree = "<group>"; };
+		046523441D12C2F20036E70B /* DJClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJClassViewController.m; path = "电商项目/DJClassViewController.m"; sourceTree = "<group>"; };
+		046523451D12C2F20036E70B /* DJMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJMyViewController.h; path = "电商项目/DJMyViewController.h"; sourceTree = "<group>"; };
+		046523461D12C2F20036E70B /* DJMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJMyViewController.m; path = "电商项目/DJMyViewController.m"; sourceTree = "<group>"; };
+		046523471D12C2F20036E70B /* DJNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJNavigationViewController.h; path = "电商项目/DJNavigationViewController.h"; sourceTree = "<group>"; };
+		046523481D12C2F20036E70B /* DJNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJNavigationViewController.m; path = "电商项目/DJNavigationViewController.m"; sourceTree = "<group>"; };
+		046523491D12C2F20036E70B /* DJOpenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJOpenViewController.h; path = "电商项目/DJOpenViewController.h"; sourceTree = "<group>"; };
+		0465234A1D12C2F20036E70B /* DJOpenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJOpenViewController.m; path = "电商项目/DJOpenViewController.m"; sourceTree = "<group>"; };
+		0465234B1D12C2F20036E70B /* DJShopingCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJShopingCarViewController.h; path = "电商项目/DJShopingCarViewController.h"; sourceTree = "<group>"; };
+		0465234C1D12C2F20036E70B /* DJShopingCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJShopingCarViewController.m; path = "电商项目/DJShopingCarViewController.m"; sourceTree = "<group>"; };
+		0465234D1D12C2F20036E70B /* DJTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJTabBarViewController.h; path = "电商项目/DJTabBarViewController.h"; sourceTree = "<group>"; };
+		0465234E1D12C2F20036E70B /* DJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJTabBarViewController.m; path = "电商项目/DJTabBarViewController.m"; sourceTree = "<group>"; };
+		0465234F1D12C2F20036E70B /* DJTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJTimeViewController.h; path = "电商项目/DJTimeViewController.h"; sourceTree = "<group>"; };
+		046523501D12C2F20036E70B /* DJTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJTimeViewController.m; path = "电商项目/DJTimeViewController.m"; sourceTree = "<group>"; };
+		046523511D12C2F20036E70B /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstView.h; path = "电商项目/FirstView.h"; sourceTree = "<group>"; };
+		046523521D12C2F20036E70B /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstView.m; path = "电商项目/FirstView.m"; sourceTree = "<group>"; };
+		0465235A1D12C2F20036E70B /* views.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = views.plist; path = "电商项目/views.plist"; sourceTree = "<group>"; };
+		1016A763890F74CB3A8754FA /* Pods-电商 项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目/Pods-电商 项目.debug.xcconfig"; sourceTree = "<group>"; };
+		3F1E7347979C35697281FBE1 /* Pods-电商 项目Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目Tests/Pods-电商 项目Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商 项目Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		717D925984C5B78475F1EB8D /* Pods-电商 项目Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目Tests/Pods-电商 项目Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CFA1D11BEF1E631AAD467A6 /* Pods-电商 项目UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目UITests/Pods-电商 项目UITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9CF2210C61CC0B26926E8EC /* libPods-电商 项目UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商 项目UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDC098EAC5B9B8DCF41A908 /* libPods-电商 项目.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商 项目.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90E4914D9A1DB741803EF17 /* Pods-电商 项目UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目UITests/Pods-电商 项目UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9BFE47AE01BA686D5F974A6 /* Pods-电商 项目.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目.release.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目/Pods-电商 项目.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046523011D12C2A20036E70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D64240D39B2FB220F604D8F /* libPods-电商 项目.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0465231A1D12C2A20036E70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2036026F6FF579542A8710B /* libPods-电商 项目Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046523251D12C2A20036E70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B7DAAA90D5EA866F2A9B947 /* libPods-电商 项目UITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045B46571D1B806D00145380 /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				045B465A1D1B807000145380 /* 网络请求 */,
+				045B46591D1B806D00145380 /* view */,
+				045B46581D1B806D00145380 /* 第三方登陆 */,
+			);
+			name = "工具类";
+			sourceTree = "<group>";
+		};
+		045B46581D1B806D00145380 /* 第三方登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				045B465B1D1B80F400145380 /* UMThirdLogin.h */,
+				045B465C1D1B80F400145380 /* UMThirdLogin.m */,
+			);
+			name = "第三方登陆";
+			sourceTree = "<group>";
+		};
+		045B46591D1B806D00145380 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				045B46611D1B810800145380 /* view.h */,
+				045B46621D1B810800145380 /* view.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		045B465A1D1B807000145380 /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				045B465E1D1B80FD00145380 /* BaseViewController.h */,
+				045B465F1D1B80FD00145380 /* BaseViewController.m */,
+			);
+			name = "网络请求";
+			sourceTree = "<group>";
+		};
+		045B46651D1B8B7B00145380 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				045B46661D1B8B9100145380 /* DJScrollView.h */,
+				045B46671D1B8B9100145380 /* DJScrollView.m */,
+				045B466E1D1BC18100145380 /* DJButtonView.h */,
+				045B466F1D1BC18100145380 /* DJButtonView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		045B46691D1B8E6300145380 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				045B466A1D1B8F7700145380 /* DJModel.h */,
+				045B466B1D1B8F7700145380 /* DJModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		046522FB1D12C2A20036E70B = {
+			isa = PBXGroup;
+			children = (
+				046523061D12C2A20036E70B /* 电商 项目 */,
+				046523201D12C2A20036E70B /* 电商 项目Tests */,
+				0465232B1D12C2A20036E70B /* 电商 项目UITests */,
+				046523051D12C2A20036E70B /* Products */,
+				ED05C62EAB702A3D2ADAD4FA /* Pods */,
+				93E5D327BA65ABAB24B99DF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		046523051D12C2A20036E70B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046523041D12C2A20036E70B /* 电商 项目.app */,
+				0465231D1D12C2A20036E70B /* 电商 项目Tests.xctest */,
+				046523281D12C2A20036E70B /* 电商 项目UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046523061D12C2A20036E70B /* 电商 项目 */ = {
+			isa = PBXGroup;
+			children = (
+				0465230A1D12C2A20036E70B /* AppDelegate.h */,
+				0465230B1D12C2A20036E70B /* AppDelegate.m */,
+				0465233A1D12C2B30036E70B /* PrefixHeader.pch */,
+				046523721D12C3970036E70B /* 导航控制器 */,
+				046523711D12C3950036E70B /* 视图控制器 */,
+				046523131D12C2A20036E70B /* Assets.xcassets */,
+				046523071D12C2A20036E70B /* Supporting Files */,
+			);
+			path = "电商 项目";
+			sourceTree = "<group>";
+		};
+		046523071D12C2A20036E70B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				046523181D12C2A20036E70B /* Info.plist */,
+				046523151D12C2A20036E70B /* LaunchScreen.storyboard */,
+				046523081D12C2A20036E70B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		046523201D12C2A20036E70B /* 电商 项目Tests */ = {
+			isa = PBXGroup;
+			children = (
+				046523211D12C2A20036E70B /* _____Tests.m */,
+				046523231D12C2A20036E70B /* Info.plist */,
+			);
+			path = "电商 项目Tests";
+			sourceTree = "<group>";
+		};
+		0465232B1D12C2A20036E70B /* 电商 项目UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0465232C1D12C2A20036E70B /* _____UITests.m */,
+				0465232E1D12C2A20036E70B /* Info.plist */,
+			);
+			path = "电商 项目UITests";
+			sourceTree = "<group>";
+		};
+		0465236B1D12C3920036E70B /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				046523411D12C2F20036E70B /* DJAddViewController.h */,
+				046523421D12C2F20036E70B /* DJAddViewController.m */,
+			);
+			name = "注册";
+			sourceTree = "<group>";
+		};
+		0465236C1D12C3930036E70B /* 登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				046523491D12C2F20036E70B /* DJOpenViewController.h */,
+				0465234A1D12C2F20036E70B /* DJOpenViewController.m */,
+				046523731D12C4510036E70B /* view */,
+			);
+			name = "登陆";
+			sourceTree = "<group>";
+		};
+		0465236D1D12C3930036E70B /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				046523451D12C2F20036E70B /* DJMyViewController.h */,
+				046523461D12C2F20036E70B /* DJMyViewController.m */,
+				04BFA8A61D12D3D4006B293F /* view */,
+			);
+			name = "我的";
+			sourceTree = "<group>";
+		};
+		0465236E1D12C3930036E70B /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				0465234B1D12C2F20036E70B /* DJShopingCarViewController.h */,
+				0465234C1D12C2F20036E70B /* DJShopingCarViewController.m */,
+			);
+			name = "购物车";
+			sourceTree = "<group>";
+		};
+		0465236F1D12C3940036E70B /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				046523431D12C2F20036E70B /* DJClassViewController.h */,
+				046523441D12C2F20036E70B /* DJClassViewController.m */,
+			);
+			name = "分类";
+			sourceTree = "<group>";
+		};
+		046523701D12C3940036E70B /* 限时特卖 */ = {
+			isa = PBXGroup;
+			children = (
+				0465234F1D12C2F20036E70B /* DJTimeViewController.h */,
+				046523501D12C2F20036E70B /* DJTimeViewController.m */,
+				045B46651D1B8B7B00145380 /* view */,
+				045B46691D1B8E6300145380 /* model */,
+			);
+			name = "限时特卖";
+			sourceTree = "<group>";
+		};
+		046523711D12C3950036E70B /* 视图控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				046523701D12C3940036E70B /* 限时特卖 */,
+				0465236F1D12C3940036E70B /* 分类 */,
+				0465236E1D12C3930036E70B /* 购物车 */,
+				0465236D1D12C3930036E70B /* 我的 */,
+				0465236B1D12C3920036E70B /* 注册 */,
+				0465236C1D12C3930036E70B /* 登陆 */,
+				045B46571D1B806D00145380 /* 工具类 */,
+			);
+			name = "视图控制器";
+			sourceTree = "<group>";
+		};
+		046523721D12C3970036E70B /* 导航控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				0465235A1D12C2F20036E70B /* views.plist */,
+				0465234D1D12C2F20036E70B /* DJTabBarViewController.h */,
+				0465234E1D12C2F20036E70B /* DJTabBarViewController.m */,
+				046523471D12C2F20036E70B /* DJNavigationViewController.h */,
+				046523481D12C2F20036E70B /* DJNavigationViewController.m */,
+			);
+			name = "导航控制器";
+			sourceTree = "<group>";
+		};
+		046523731D12C4510036E70B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				046523511D12C2F20036E70B /* FirstView.h */,
+				046523521D12C2F20036E70B /* FirstView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		04BFA8A61D12D3D4006B293F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				045B464E1D1B7FEF00145380 /* DJMyTableHeaderView.h */,
+				045B464F1D1B7FEF00145380 /* DJMyTableHeaderView.m */,
+				045B46501D1B7FEF00145380 /* DJTableView.h */,
+				045B46511D1B7FEF00145380 /* DJTableView.m */,
+				045B46521D1B7FEF00145380 /* DJTableViewCell.h */,
+				045B46531D1B7FEF00145380 /* DJTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		93E5D327BA65ABAB24B99DF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCDC098EAC5B9B8DCF41A908 /* libPods-电商 项目.a */,
+				4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */,
+				B9CF2210C61CC0B26926E8EC /* libPods-电商 项目UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED05C62EAB702A3D2ADAD4FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1016A763890F74CB3A8754FA /* Pods-电商 项目.debug.xcconfig */,
+				F9BFE47AE01BA686D5F974A6 /* Pods-电商 项目.release.xcconfig */,
+				717D925984C5B78475F1EB8D /* Pods-电商 项目Tests.debug.xcconfig */,
+				3F1E7347979C35697281FBE1 /* Pods-电商 项目Tests.release.xcconfig */,
+				F90E4914D9A1DB741803EF17 /* Pods-电商 项目UITests.debug.xcconfig */,
+				7CFA1D11BEF1E631AAD467A6 /* Pods-电商 项目UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046523031D12C2A20036E70B /* 电商 项目 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046523311D12C2A20036E70B /* Build configuration list for PBXNativeTarget "电商 项目" */;
+			buildPhases = (
+				334537EA40E6E56E8FB1E2E7 /* [CP] Check Pods Manifest.lock */,
+				046523001D12C2A20036E70B /* Sources */,
+				046523011D12C2A20036E70B /* Frameworks */,
+				046523021D12C2A20036E70B /* Resources */,
+				FFA6251CA012ADA11A74D818 /* [CP] Embed Pods Frameworks */,
+				92E884C84FDF9E0677BF6451 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "电商 项目";
+			productName = "电商 项目";
+			productReference = 046523041D12C2A20036E70B /* 电商 项目.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0465231C1D12C2A20036E70B /* 电商 项目Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046523341D12C2A20036E70B /* Build configuration list for PBXNativeTarget "电商 项目Tests" */;
+			buildPhases = (
+				BFE5A8A12DD7FF1B5515BAC8 /* [CP] Check Pods Manifest.lock */,
+				046523191D12C2A20036E70B /* Sources */,
+				0465231A1D12C2A20036E70B /* Frameworks */,
+				0465231B1D12C2A20036E70B /* Resources */,
+				658AFE03D4833AB7105F3AF5 /* [CP] Embed Pods Frameworks */,
+				68BFDABFD0252C5B66EBEB53 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0465231F1D12C2A20036E70B /* PBXTargetDependency */,
+			);
+			name = "电商 项目Tests";
+			productName = "电商 项目Tests";
+			productReference = 0465231D1D12C2A20036E70B /* 电商 项目Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		046523271D12C2A20036E70B /* 电商 项目UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046523371D12C2A20036E70B /* Build configuration list for PBXNativeTarget "电商 项目UITests" */;
+			buildPhases = (
+				C4D8239E9C7162A59EED289F /* [CP] Check Pods Manifest.lock */,
+				046523241D12C2A20036E70B /* Sources */,
+				046523251D12C2A20036E70B /* Frameworks */,
+				046523261D12C2A20036E70B /* Resources */,
+				79817E67D57068A85F19F1A0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0465232A1D12C2A20036E70B /* PBXTargetDependency */,
+			);
+			name = "电商 项目UITests";
+			productName = "电商 项目UITests";
+			productReference = 046523281D12C2A20036E70B /* 电商 项目UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046522FC1D12C2A20036E70B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ZCJ;
+				TargetAttributes = {
+					046523031D12C2A20036E70B = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = R3D8864NMJ;
+					};
+					0465231C1D12C2A20036E70B = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = R3D8864NMJ;
+						TestTargetID = 046523031D12C2A20036E70B;
+					};
+					046523271D12C2A20036E70B = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = R3D8864NMJ;
+						TestTargetID = 046523031D12C2A20036E70B;
+					};
+				};
+			};
+			buildConfigurationList = 046522FF1D12C2A20036E70B /* Build configuration list for PBXProject "电商 项目" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 046522FB1D12C2A20036E70B;
+			productRefGroup = 046523051D12C2A20036E70B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046523031D12C2A20036E70B /* 电商 项目 */,
+				0465231C1D12C2A20036E70B /* 电商 项目Tests */,
+				046523271D12C2A20036E70B /* 电商 项目UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046523021D12C2A20036E70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046523171D12C2A20036E70B /* LaunchScreen.storyboard in Resources */,
+				0465236A1D12C2F20036E70B /* views.plist in Resources */,
+				046523141D12C2A20036E70B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0465231B1D12C2A20036E70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046523261D12C2A20036E70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		334537EA40E6E56E8FB1E2E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		658AFE03D4833AB7105F3AF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电商 项目Tests/Pods-电商 项目Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BFDABFD0252C5B66EBEB53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电商 项目Tests/Pods-电商 项目Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79817E67D57068A85F19F1A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电商 项目UITests/Pods-电商 项目UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E884C84FDF9E0677BF6451 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电商 项目/Pods-电商 项目-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE5A8A12DD7FF1B5515BAC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D8239E9C7162A59EED289F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA6251CA012ADA11A74D818 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电商 项目/Pods-电商 项目-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046523001D12C2A20036E70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045B46541D1B7FEF00145380 /* DJMyTableHeaderView.m in Sources */,
+				046523621D12C2F20036E70B /* DJOpenViewController.m in Sources */,
+				0465230C1D12C2A20036E70B /* AppDelegate.m in Sources */,
+				046523641D12C2F20036E70B /* DJTabBarViewController.m in Sources */,
+				045B46551D1B7FEF00145380 /* DJTableView.m in Sources */,
+				045B46681D1B8B9100145380 /* DJScrollView.m in Sources */,
+				045B46561D1B7FEF00145380 /* DJTableViewCell.m in Sources */,
+				046523651D12C2F20036E70B /* DJTimeViewController.m in Sources */,
+				0465235E1D12C2F20036E70B /* DJAddViewController.m in Sources */,
+				046523611D12C2F20036E70B /* DJNavigationViewController.m in Sources */,
+				045B46701D1BC18100145380 /* DJButtonView.m in Sources */,
+				045B46601D1B80FD00145380 /* BaseViewController.m in Sources */,
+				045B46631D1B810800145380 /* view.m in Sources */,
+				045B465D1D1B80F400145380 /* UMThirdLogin.m in Sources */,
+				045B466C1D1B8F7700145380 /* DJModel.m in Sources */,
+				046523661D12C2F20036E70B /* FirstView.m in Sources */,
+				046523631D12C2F20036E70B /* DJShopingCarViewController.m in Sources */,
+				046523601D12C2F20036E70B /* DJMyViewController.m in Sources */,
+				046523091D12C2A20036E70B /* main.m in Sources */,
+				0465235F1D12C2F20036E70B /* DJClassViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046523191D12C2A20036E70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046523221D12C2A20036E70B /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046523241D12C2A20036E70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0465232D1D12C2A20036E70B /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0465231F1D12C2A20036E70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046523031D12C2A20036E70B /* 电商 项目 */;
+			targetProxy = 0465231E1D12C2A20036E70B /* PBXContainerItemProxy */;
+		};
+		0465232A1D12C2A20036E70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046523031D12C2A20036E70B /* 电商 项目 */;
+			targetProxy = 046523291D12C2A20036E70B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		046523151D12C2A20036E70B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046523161D12C2A20036E70B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0465232F1D12C2A20036E70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		046523301D12C2A20036E70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046523321D12C2A20036E70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1016A763890F74CB3A8754FA /* Pods-电商 项目.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/电商 项目/PrefixHeader.pch";
+				INFOPLIST_FILE = "电商 项目/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		046523331D12C2A20036E70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BFE47AE01BA686D5F974A6 /* Pods-电商 项目.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/电商 项目/PrefixHeader.pch";
+				INFOPLIST_FILE = "电商 项目/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		046523351D12C2A20036E70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717D925984C5B78475F1EB8D /* Pods-电商 项目Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "电商 项目Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/电商 项目.app/电商 项目";
+			};
+			name = Debug;
+		};
+		046523361D12C2A20036E70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1E7347979C35697281FBE1 /* Pods-电商 项目Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "电商 项目Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/电商 项目.app/电商 项目";
+			};
+			name = Release;
+		};
+		046523381D12C2A20036E70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90E4914D9A1DB741803EF17 /* Pods-电商 项目UITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "电商 项目UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "电商 项目";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		046523391D12C2A20036E70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CFA1D11BEF1E631AAD467A6 /* Pods-电商 项目UITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "电商 项目UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "电商 项目";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046522FF1D12C2A20036E70B /* Build configuration list for PBXProject "电商 项目" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0465232F1D12C2A20036E70B /* Debug */,
+				046523301D12C2A20036E70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046523311D12C2A20036E70B /* Build configuration list for PBXNativeTarget "电商 项目" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046523321D12C2A20036E70B /* Debug */,
+				046523331D12C2A20036E70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046523341D12C2A20036E70B /* Build configuration list for PBXNativeTarget "电商 项目Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046523351D12C2A20036E70B /* Debug */,
+				046523361D12C2A20036E70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046523371D12C2A20036E70B /* Build configuration list for PBXNativeTarget "电商 项目UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046523381D12C2A20036E70B /* Debug */,
+				046523391D12C2A20036E70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 046522FC1D12C2A20036E70B /* Project object */;
+}
