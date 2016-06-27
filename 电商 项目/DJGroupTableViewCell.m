@@ -1,0 +1,23 @@
+//
+//  DJGroupTableViewCell.m
+//  电商 项目
+//
+//  Created by ma c on 16/6/24.
+//  Copyright © 2016年 ZCJ. All rights reserved.
+//
+
+#import "DJGroupTableViewCell.h"
+
+@implementation DJGroupTableViewCell
+
+- (void)awakeFromNib {
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

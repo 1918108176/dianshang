@@ -43,10 +43,11 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.iconImageView];
+        
         [self addSubview:self.imageView];
         [self addSubview:self.lodaingButton];
         [self addSubview:self.loginButton];
+        [self addSubview:self.iconImageView];
         [self addSubview:self.userNameLabel];
         [self addSubview:self.gradeLabel];
         NSDictionary *isLogin = [[NSUserDefaults standardUserDefaults]valueForKey:@"ISLOGIN"];

@@ -26,54 +26,58 @@
     self = [super init];
     if (self) {
         [self addSubview:self.backLabel];
+        [self addSubview:self.lineLabel];
         [self addSubview:self.nameText];
         [self addSubview:self.passText];
-        [self addSubview:self.lineLabel];
-        [self addSubview:self.lodaingButton];
         [self addSubview:self.loginButton];
+        [self addSubview:self.lodaingButton];
     }
     return self;
 }
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    __weak typeof(self)weakSelf = self;
-    [self.backLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.mas_top).offset(100);
-        make.left.equalTo(weakSelf.mas_left);
-        make.right.equalTo(weakSelf.mas_right);
+    WS(weakSelf);
+    [_backLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.mas_top);
+        make.left.equalTo(weakSelf.mas_left).offset(-1);
+        make.right.equalTo(weakSelf.mas_right).offset(1);
         make.height.equalTo(88);
     }];
-    [self.nameText mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+    [_lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(weakSelf.backLabel.mas_left).offset(15);
+        make.right.equalTo(weakSelf.backLabel.mas_right).offset(-15);
+        make.height.equalTo(1);
+        make.centerY.equalTo(weakSelf.backLabel.mas_centerY);
+    }];
+    
+    [_nameText mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.backLabel.mas_top);
         make.left.equalTo(weakSelf.backLabel.mas_left).offset(15);
         make.right.equalTo(weakSelf.backLabel.mas_right).offset(-15);
-        make.height.equalTo(44);
-    }];
-    [self.lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.nameText.mas_bottom);
-        make.left.equalTo(weakSelf.mas_left).offset(15);
-        make.right.equalTo(weakSelf.mas_right).offset(-15);
-        make.height.equalTo(1);
-    }];
-    [self.passText mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(weakSelf.backLabel.mas_bottom);
-        make.left.equalTo(weakSelf.mas_left).offset(15);
-        make.right.equalTo(weakSelf.mas_right).offset(-15);
-        make.height.equalTo(44);
-    }];
-    [self.lodaingButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.backLabel.mas_bottom).offset(15);
-        make.left.equalTo(weakSelf.mas_left).offset(16);
-        make.right.equalTo(weakSelf.mas_right).offset(-16);
-        make.height.equalTo(35);
-    }];
-    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(CGSizeMake(100, 25));
-        make.top.equalTo(weakSelf.lodaingButton.mas_bottom).offset(17);
-        make.right.equalTo(weakSelf.mas_right).offset(-16);
+        make.bottom.equalTo(weakSelf.lineLabel.mas_top);
     }];
     
+    [_passText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.lineLabel.mas_bottom);
+        make.left.equalTo(weakSelf.backLabel.mas_left).offset(15);
+        make.right.equalTo(weakSelf.backLabel.mas_right).offset(-15);
+        make.bottom.equalTo(weakSelf.backLabel.mas_bottom);
+    }];
+    
+    [_loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.backLabel.mas_bottom).offset(15);
+        make.left.equalTo(weakSelf.backLabel.mas_left).offset(15);
+        make.right.equalTo(weakSelf.backLabel.mas_right).offset(-15);
+        make.height.equalTo(35);
+    }];
+    
+    [_lodaingButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.loginButton.mas_bottom).offset(20);
+        make.right.equalTo(weakSelf.mas_right).offset(-15);
+        make.size.equalTo(CGSizeMake(80, 22));
+    }];
 }
 
 #pragma mark -
@@ -110,25 +114,28 @@
     }
     return _lineLabel;
 }
-- (UIButton *)lodaingButton{
-    if (!_lodaingButton) {
-        _lodaingButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_lodaingButton setBackgroundColor:RGB(50.0, 165.0, 241.0)];
-        [_lodaingButton setTitle:@"登陆" forState:UIControlStateNormal];
-        [_lodaingButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _lodaingButton.layer.cornerRadius = 3;
-    }
-    return _lodaingButton;
-}
+
 - (UIButton *)loginButton{
     if (!_loginButton) {
         _loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_loginButton setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
-        [_loginButton setTitle:@"免费注册" forState:UIControlStateNormal];
-        [_loginButton setTitleColor:RGB(37.0, 122.0, 170.0) forState:UIControlStateNormal];
+        [_loginButton setBackgroundColor:RGB(50.0, 165.0, 241.0)];
+        [_loginButton setTitle:@"登陆" forState:UIControlStateNormal];
+        [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _loginButton.layer.cornerRadius = 3;
+        [_loginButton addTarget:self action:@selector(loginButtonMethod) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _loginButton;
+}
+- (UIButton *)lodaingButton{
+    if (!_lodaingButton) {
+        _lodaingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_lodaingButton setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+        [_lodaingButton setTitle:@"免费注册" forState:UIControlStateNormal];
+        [_lodaingButton setTitleColor:RGB(37.0, 122.0, 170.0) forState:UIControlStateNormal];
+        _lodaingButton.layer.cornerRadius = 3;
+        [_lodaingButton addTarget:self action:@selector(landingButtonMethod) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _lodaingButton;
 }
 - (void)loginButtonMethod{
     if (_loginBlock) {

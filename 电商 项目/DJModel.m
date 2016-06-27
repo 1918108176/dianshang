@@ -1,22 +1,13 @@
 //
-//	DJModel.m
-//	Model file Generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
-
-
+//  DJModel.m
+//  电商 项目
+//
+//  Created by ma c on 16/6/24.
+//  Copyright © 2016年 ZCJ. All rights reserved.
+//
 
 #import "DJModel.h"
 
-@interface DJModel ()
-@end
 @implementation DJModel
-
-
--(instancetype)initWithDictionary:(NSDictionary *)dictionary{
-    [self setValuesForKeysWithDictionary:dictionary]; 
-	return self;
-}
-- (void)setValue:(id)value forUndefinedKey:(NSString *)key{
-    NSLog(@"键值不匹配");
-}
 
 @end

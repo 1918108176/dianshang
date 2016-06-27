@@ -40,7 +40,7 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0],NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:81.0/255.0 green:117.0/255.0 blue:238.0/255.0 alpha:1.0]} forState:UIControlStateSelected];
     self.viewControllers = muArr;
-    self.selectedIndex = 0;
+    self.selectedIndex = 1;
     
 }
 

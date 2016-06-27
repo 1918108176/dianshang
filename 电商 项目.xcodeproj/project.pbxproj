@@ -13,9 +13,11 @@
 		045B465D1D1B80F400145380 /* UMThirdLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B465C1D1B80F400145380 /* UMThirdLogin.m */; };
 		045B46601D1B80FD00145380 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B465F1D1B80FD00145380 /* BaseViewController.m */; };
 		045B46631D1B810800145380 /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46621D1B810800145380 /* view.m */; };
-		045B46681D1B8B9100145380 /* DJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46671D1B8B9100145380 /* DJScrollView.m */; };
-		045B466C1D1B8F7700145380 /* DJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B466B1D1B8F7700145380 /* DJModel.m */; };
 		045B46701D1BC18100145380 /* DJButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B466F1D1BC18100145380 /* DJButtonView.m */; };
+		046269F01D20B7300099CFE0 /* DJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269EF1D20B7300099CFE0 /* DJCollectionView.m */; };
+		046269F31D20BB0D0099CFE0 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269F21D20BB0D0099CFE0 /* CollectionViewCell.m */; };
+		046269F61D20C3350099CFE0 /* DJCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269F51D20C3350099CFE0 /* DJCollectionReusableView.m */; };
+		046269FB1D20C9FB0099CFE0 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269F91D20C9FB0099CFE0 /* ClassModel.m */; };
 		046523091D12C2A20036E70B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523081D12C2A20036E70B /* main.m */; };
 		0465230C1D12C2A20036E70B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465230B1D12C2A20036E70B /* AppDelegate.m */; };
 		046523141D12C2A20036E70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046523131D12C2A20036E70B /* Assets.xcassets */; };
@@ -32,6 +34,14 @@
 		046523651D12C2F20036E70B /* DJTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523501D12C2F20036E70B /* DJTimeViewController.m */; };
 		046523661D12C2F20036E70B /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523521D12C2F20036E70B /* FirstView.m */; };
 		0465236A1D12C2F20036E70B /* views.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0465235A1D12C2F20036E70B /* views.plist */; };
+		048844BD1D1D06D20022FD58 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844BB1D1D06D20022FD58 /* RootClass.m */; };
+		048844C01D1D127D0022FD58 /* DJScrollTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844BF1D1D127D0022FD58 /* DJScrollTableView.m */; };
+		048844C41D1D1F9E0022FD58 /* SJSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844C31D1D1F9E0022FD58 /* SJSearchViewController.m */; };
+		048844C71D1D2A360022FD58 /* DJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844C61D1D2A360022FD58 /* DJModel.m */; };
+		048844CA1D1D2A560022FD58 /* DJSecondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844C91D1D2A560022FD58 /* DJSecondModel.m */; };
+		048844CE1D1D2D260022FD58 /* DJSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844CD1D1D2D260022FD58 /* DJSingleTableViewCell.m */; };
+		048844D11D1D2D370022FD58 /* DJGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844D01D1D2D370022FD58 /* DJGroupTableViewCell.m */; };
+		04B4C67C1D1D672900D13544 /* NSMutableAttributedString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C67B1D1D672900D13544 /* NSMutableAttributedString+Helper.m */; };
 		0B7DAAA90D5EA866F2A9B947 /* libPods-电商 项目UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CF2210C61CC0B26926E8EC /* libPods-电商 项目UITests.a */; };
 		7D64240D39B2FB220F604D8F /* libPods-电商 项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDC098EAC5B9B8DCF41A908 /* libPods-电商 项目.a */; };
 		B2036026F6FF579542A8710B /* libPods-电商 项目Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */; };
@@ -67,12 +77,16 @@
 		045B465F1D1B80FD00145380 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		045B46611D1B810800145380 /* view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
 		045B46621D1B810800145380 /* view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
-		045B46661D1B8B9100145380 /* DJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJScrollView.h; sourceTree = "<group>"; };
-		045B46671D1B8B9100145380 /* DJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJScrollView.m; sourceTree = "<group>"; };
-		045B466A1D1B8F7700145380 /* DJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJModel.h; sourceTree = "<group>"; };
-		045B466B1D1B8F7700145380 /* DJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJModel.m; sourceTree = "<group>"; };
 		045B466E1D1BC18100145380 /* DJButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJButtonView.h; sourceTree = "<group>"; };
 		045B466F1D1BC18100145380 /* DJButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJButtonView.m; sourceTree = "<group>"; };
+		046269EE1D20B7300099CFE0 /* DJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCollectionView.h; sourceTree = "<group>"; };
+		046269EF1D20B7300099CFE0 /* DJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCollectionView.m; sourceTree = "<group>"; };
+		046269F11D20BB0D0099CFE0 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		046269F21D20BB0D0099CFE0 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		046269F41D20C3350099CFE0 /* DJCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCollectionReusableView.h; sourceTree = "<group>"; };
+		046269F51D20C3350099CFE0 /* DJCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCollectionReusableView.m; sourceTree = "<group>"; };
+		046269F91D20C9FB0099CFE0 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
+		046269FA1D20C9FB0099CFE0 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
 		046523041D12C2A20036E70B /* 电商 项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电商 项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046523081D12C2A20036E70B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0465230A1D12C2A20036E70B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +120,22 @@
 		046523511D12C2F20036E70B /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstView.h; path = "电商项目/FirstView.h"; sourceTree = "<group>"; };
 		046523521D12C2F20036E70B /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstView.m; path = "电商项目/FirstView.m"; sourceTree = "<group>"; };
 		0465235A1D12C2F20036E70B /* views.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = views.plist; path = "电商项目/views.plist"; sourceTree = "<group>"; };
+		048844BB1D1D06D20022FD58 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
+		048844BC1D1D06D20022FD58 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
+		048844BE1D1D127D0022FD58 /* DJScrollTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJScrollTableView.h; sourceTree = "<group>"; };
+		048844BF1D1D127D0022FD58 /* DJScrollTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJScrollTableView.m; sourceTree = "<group>"; };
+		048844C21D1D1F9E0022FD58 /* SJSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSearchViewController.h; sourceTree = "<group>"; };
+		048844C31D1D1F9E0022FD58 /* SJSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSearchViewController.m; sourceTree = "<group>"; };
+		048844C51D1D2A360022FD58 /* DJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJModel.h; sourceTree = "<group>"; };
+		048844C61D1D2A360022FD58 /* DJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJModel.m; sourceTree = "<group>"; };
+		048844C81D1D2A560022FD58 /* DJSecondModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJSecondModel.h; sourceTree = "<group>"; };
+		048844C91D1D2A560022FD58 /* DJSecondModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJSecondModel.m; sourceTree = "<group>"; };
+		048844CC1D1D2D260022FD58 /* DJSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJSingleTableViewCell.h; sourceTree = "<group>"; };
+		048844CD1D1D2D260022FD58 /* DJSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJSingleTableViewCell.m; sourceTree = "<group>"; };
+		048844CF1D1D2D370022FD58 /* DJGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJGroupTableViewCell.h; sourceTree = "<group>"; };
+		048844D01D1D2D370022FD58 /* DJGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJGroupTableViewCell.m; sourceTree = "<group>"; };
+		04B4C67A1D1D672900D13544 /* NSMutableAttributedString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Helper.h"; sourceTree = "<group>"; };
+		04B4C67B1D1D672900D13544 /* NSMutableAttributedString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Helper.m"; sourceTree = "<group>"; };
 		1016A763890F74CB3A8754FA /* Pods-电商 项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目/Pods-电商 项目.debug.xcconfig"; sourceTree = "<group>"; };
 		3F1E7347979C35697281FBE1 /* Pods-电商 项目Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目Tests/Pods-电商 项目Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商 项目Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +178,7 @@
 		045B46571D1B806D00145380 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				04B4C6791D1D665D00D13544 /* 类别 */,
 				045B465A1D1B807000145380 /* 网络请求 */,
 				045B46591D1B806D00145380 /* view */,
 				045B46581D1B806D00145380 /* 第三方登陆 */,
@@ -185,10 +216,11 @@
 		045B46651D1B8B7B00145380 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				045B46661D1B8B9100145380 /* DJScrollView.h */,
-				045B46671D1B8B9100145380 /* DJScrollView.m */,
 				045B466E1D1BC18100145380 /* DJButtonView.h */,
 				045B466F1D1BC18100145380 /* DJButtonView.m */,
+				048844BE1D1D127D0022FD58 /* DJScrollTableView.h */,
+				048844BF1D1D127D0022FD58 /* DJScrollTableView.m */,
+				048844CB1D1D2CFE0022FD58 /* cell */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -196,8 +228,34 @@
 		045B46691D1B8E6300145380 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				045B466A1D1B8F7700145380 /* DJModel.h */,
-				045B466B1D1B8F7700145380 /* DJModel.m */,
+				048844BC1D1D06D20022FD58 /* RootClass.h */,
+				048844BB1D1D06D20022FD58 /* RootClass.m */,
+				048844C51D1D2A360022FD58 /* DJModel.h */,
+				048844C61D1D2A360022FD58 /* DJModel.m */,
+				048844C81D1D2A560022FD58 /* DJSecondModel.h */,
+				048844C91D1D2A560022FD58 /* DJSecondModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		046269F71D20C9C60099CFE0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				046269EE1D20B7300099CFE0 /* DJCollectionView.h */,
+				046269EF1D20B7300099CFE0 /* DJCollectionView.m */,
+				046269F41D20C3350099CFE0 /* DJCollectionReusableView.h */,
+				046269F51D20C3350099CFE0 /* DJCollectionReusableView.m */,
+				046269F11D20BB0D0099CFE0 /* CollectionViewCell.h */,
+				046269F21D20BB0D0099CFE0 /* CollectionViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		046269F81D20C9DA0099CFE0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				046269FA1D20C9FB0099CFE0 /* ClassModel.h */,
+				046269F91D20C9FB0099CFE0 /* ClassModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -309,6 +367,8 @@
 			children = (
 				046523431D12C2F20036E70B /* DJClassViewController.h */,
 				046523441D12C2F20036E70B /* DJClassViewController.m */,
+				046269F71D20C9C60099CFE0 /* view */,
+				046269F81D20C9DA0099CFE0 /* model */,
 			);
 			name = "分类";
 			sourceTree = "<group>";
@@ -327,6 +387,7 @@
 		046523711D12C3950036E70B /* 视图控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				048844C11D1D1F6D0022FD58 /* 搜索 */,
 				046523701D12C3940036E70B /* 限时特卖 */,
 				0465236F1D12C3940036E70B /* 分类 */,
 				0465236E1D12C3930036E70B /* 购物车 */,
@@ -357,6 +418,35 @@
 				046523521D12C2F20036E70B /* FirstView.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		048844C11D1D1F6D0022FD58 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				048844C21D1D1F9E0022FD58 /* SJSearchViewController.h */,
+				048844C31D1D1F9E0022FD58 /* SJSearchViewController.m */,
+			);
+			name = "搜索";
+			sourceTree = "<group>";
+		};
+		048844CB1D1D2CFE0022FD58 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				048844CC1D1D2D260022FD58 /* DJSingleTableViewCell.h */,
+				048844CD1D1D2D260022FD58 /* DJSingleTableViewCell.m */,
+				048844CF1D1D2D370022FD58 /* DJGroupTableViewCell.h */,
+				048844D01D1D2D370022FD58 /* DJGroupTableViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		04B4C6791D1D665D00D13544 /* 类别 */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C67A1D1D672900D13544 /* NSMutableAttributedString+Helper.h */,
+				04B4C67B1D1D672900D13544 /* NSMutableAttributedString+Helper.m */,
+			);
+			name = "类别";
 			sourceTree = "<group>";
 		};
 		04BFA8A61D12D3D4006B293F /* view */ = {
@@ -661,24 +751,34 @@
 			files = (
 				045B46541D1B7FEF00145380 /* DJMyTableHeaderView.m in Sources */,
 				046523621D12C2F20036E70B /* DJOpenViewController.m in Sources */,
+				04B4C67C1D1D672900D13544 /* NSMutableAttributedString+Helper.m in Sources */,
 				0465230C1D12C2A20036E70B /* AppDelegate.m in Sources */,
+				046269F01D20B7300099CFE0 /* DJCollectionView.m in Sources */,
+				048844C01D1D127D0022FD58 /* DJScrollTableView.m in Sources */,
 				046523641D12C2F20036E70B /* DJTabBarViewController.m in Sources */,
+				048844CA1D1D2A560022FD58 /* DJSecondModel.m in Sources */,
 				045B46551D1B7FEF00145380 /* DJTableView.m in Sources */,
-				045B46681D1B8B9100145380 /* DJScrollView.m in Sources */,
+				048844C41D1D1F9E0022FD58 /* SJSearchViewController.m in Sources */,
 				045B46561D1B7FEF00145380 /* DJTableViewCell.m in Sources */,
 				046523651D12C2F20036E70B /* DJTimeViewController.m in Sources */,
 				0465235E1D12C2F20036E70B /* DJAddViewController.m in Sources */,
 				046523611D12C2F20036E70B /* DJNavigationViewController.m in Sources */,
 				045B46701D1BC18100145380 /* DJButtonView.m in Sources */,
+				048844CE1D1D2D260022FD58 /* DJSingleTableViewCell.m in Sources */,
 				045B46601D1B80FD00145380 /* BaseViewController.m in Sources */,
 				045B46631D1B810800145380 /* view.m in Sources */,
 				045B465D1D1B80F400145380 /* UMThirdLogin.m in Sources */,
-				045B466C1D1B8F7700145380 /* DJModel.m in Sources */,
 				046523661D12C2F20036E70B /* FirstView.m in Sources */,
 				046523631D12C2F20036E70B /* DJShopingCarViewController.m in Sources */,
+				048844BD1D1D06D20022FD58 /* RootClass.m in Sources */,
+				046269F61D20C3350099CFE0 /* DJCollectionReusableView.m in Sources */,
+				048844D11D1D2D370022FD58 /* DJGroupTableViewCell.m in Sources */,
 				046523601D12C2F20036E70B /* DJMyViewController.m in Sources */,
 				046523091D12C2A20036E70B /* main.m in Sources */,
+				046269FB1D20C9FB0099CFE0 /* ClassModel.m in Sources */,
 				0465235F1D12C2F20036E70B /* DJClassViewController.m in Sources */,
+				046269F31D20BB0D0099CFE0 /* CollectionViewCell.m in Sources */,
+				048844C71D1D2A360022FD58 /* DJModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

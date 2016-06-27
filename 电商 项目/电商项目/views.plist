@@ -6,7 +6,7 @@
 		<key>viewController</key>
 		<string>DJTimeViewController</string>
 		<key>title</key>
-		<string>限时特购</string>
+		<string>限时购</string>
 		<key>tabBarItemImage</key>
 		<string>菜单栏限时特卖按钮未选中状态</string>
 		<key>tabbarItemSelectImage</key>

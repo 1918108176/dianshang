@@ -36,13 +36,11 @@ static NSString * const BaseURLString = @"http://123.57.141.249:8080/beautalk/";
 
 //GET请求/
 - (void)getRequestURL:(NSString *)URL withDic:(NSDictionary *)dic withSucess:(SucessBlock)sucess Fail:(FailBlock)failBlock{
-    __weak typeof(self)weakSelf = self;
     [[AFNetworkingClient sharedClient]GET:URL parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (sucess) {
             sucess(task,responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [weakSelf showTostView:@"请检查网络连接状态"];
         if (failBlock) {
             failBlock(task,error);
         }

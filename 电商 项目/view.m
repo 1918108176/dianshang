@@ -23,8 +23,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.label];
         [self addSubview:self.lineLabel];
+        [self addSubview:self.label];
         [self addSubview:self.qqButton];
         [self addSubview:self.WeiBotton];
         [self addSubview:self.xinBotton];
@@ -34,33 +34,38 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    __weak typeof(self)weakSelf = self;
+    __weak typeof(self)ws = self;
     [_lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(ws.mas_left).offset(15);
+        make.right.equalTo(ws.mas_right).offset(-15);
+        make.top.equalTo(ws.mas_top).offset(8);
         make.height.equalTo(1);
-        make.left.equalTo(weakSelf.mas_left).offset(20);
-        make.right.equalTo(weakSelf.mas_right).offset(-20);
-        make.top.equalTo(weakSelf.mas_top).offset(10);
-    }];
-    [_label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(weakSelf.lineLabel.mas_centerY);
-        make.size.equalTo(CGSizeMake(85, 16));
-        make.centerX.equalTo(weakSelf.lineLabel.mas_centerX);
-    }];
-    [_WeiBotton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(CGSizeMake(45, 45));
-        make.centerX.equalTo(weakSelf.mas_centerX);
-        make.top.equalTo(weakSelf.label.mas_bottom).offset(20);
-    }];
-    [_qqButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(CGSizeMake(45, 45));
-        make.right.equalTo(weakSelf.WeiBotton.mas_left).offset(-(VIEW_WIDTH-135)/4);
-        make.top.equalTo(weakSelf.label.mas_bottom).offset(20);
     }];
     
+    [_label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws);
+        make.left.equalTo(ws.mas_left).offset(100);
+        make.right.equalTo(ws.mas_right).offset(-100);
+        make.height.equalTo(16);
+    }];
+    [_qqButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.mas_top).offset(25);
+        make.left.equalTo(ws.mas_left).offset(60);
+        make.right.equalTo(ws.mas_left).offset(105);
+        make.height.equalTo(45);
+    }];
+    [_WeiBotton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.mas_top).offset(25);
+        make.height.equalTo(45);
+        make.left.equalTo(ws.qqButton.mas_right).offset(60);
+        make.right.equalTo(ws.qqButton.mas_right).offset(105);
+    }];
     [_xinBotton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(CGSizeMake(45, 45));
-        make.left.equalTo(weakSelf.WeiBotton.mas_right).offset((VIEW_WIDTH-135)/4);
-        make.top.equalTo(weakSelf.label.mas_bottom).offset(20);
+        make.top.equalTo(ws.mas_top).offset(25);
+        make.height.equalTo(45);
+        make.right.equalTo(ws.mas_right).offset(-60);
+        make.left.equalTo(ws.WeiBotton.mas_right).offset(60);
+        
     }];
 }
 
@@ -85,6 +90,7 @@
         _qqButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_qqButton setBackgroundImage:[UIImage imageNamed:@"登录界面qq登陆"] forState:UIControlStateNormal];
         [_qqButton addTarget:self action:@selector(qqButtonLoginMethod) forControlEvents:UIControlEventTouchUpInside];
+        [_qqButton addTarget:self action:@selector(qqButtonLoginMethod) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _qqButton;
 }
