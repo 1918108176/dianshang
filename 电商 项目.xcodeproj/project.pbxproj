@@ -12,12 +12,19 @@
 		045B46561D1B7FEF00145380 /* DJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46531D1B7FEF00145380 /* DJTableViewCell.m */; };
 		045B465D1D1B80F400145380 /* UMThirdLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B465C1D1B80F400145380 /* UMThirdLogin.m */; };
 		045B46601D1B80FD00145380 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B465F1D1B80FD00145380 /* BaseViewController.m */; };
-		045B46631D1B810800145380 /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46621D1B810800145380 /* view.m */; };
 		045B46701D1BC18100145380 /* DJButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B466F1D1BC18100145380 /* DJButtonView.m */; };
+		046229801D239ACD00E5BA13 /* DJClassListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462297F1D239ACD00E5BA13 /* DJClassListModel.m */; };
+		046229831D23A71900E5BA13 /* ThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046229821D23A71900E5BA13 /* ThreeView.m */; };
+		046229861D23BA9400E5BA13 /* DJLandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046229851D23BA9400E5BA13 /* DJLandingViewController.m */; };
+		046229891D23BAB000E5BA13 /* DJAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046229881D23BAB000E5BA13 /* DJAddView.m */; };
+		0462298C1D23BAC200E5BA13 /* DJLanding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462298B1D23BAC200E5BA13 /* DJLanding.m */; };
 		046269F01D20B7300099CFE0 /* DJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269EF1D20B7300099CFE0 /* DJCollectionView.m */; };
 		046269F31D20BB0D0099CFE0 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269F21D20BB0D0099CFE0 /* CollectionViewCell.m */; };
 		046269F61D20C3350099CFE0 /* DJCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269F51D20C3350099CFE0 /* DJCollectionReusableView.m */; };
 		046269FB1D20C9FB0099CFE0 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 046269F91D20C9FB0099CFE0 /* ClassModel.m */; };
+		04626A041D210DF40099CFE0 /* UIImageView+DJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04626A031D210DF40099CFE0 /* UIImageView+DJImage.m */; };
+		04626A0A1D2112390099CFE0 /* DJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04626A091D2112390099CFE0 /* DJCollectionViewCell.m */; };
+		04626A0F1D212D0F0099CFE0 /* DJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04626A0E1D212D0F0099CFE0 /* DJTableViewController.m */; };
 		046523091D12C2A20036E70B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523081D12C2A20036E70B /* main.m */; };
 		0465230C1D12C2A20036E70B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465230B1D12C2A20036E70B /* AppDelegate.m */; };
 		046523141D12C2A20036E70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046523131D12C2A20036E70B /* Assets.xcassets */; };
@@ -34,6 +41,12 @@
 		046523651D12C2F20036E70B /* DJTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523501D12C2F20036E70B /* DJTimeViewController.m */; };
 		046523661D12C2F20036E70B /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523521D12C2F20036E70B /* FirstView.m */; };
 		0465236A1D12C2F20036E70B /* views.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0465235A1D12C2F20036E70B /* views.plist */; };
+		046BF6981D221E1D0050E9F2 /* DJGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF6971D221E1D0050E9F2 /* DJGoodsView.m */; };
+		046BF69C1D2228550050E9F2 /* NSMutableAttributedString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF69B1D2228550050E9F2 /* NSMutableAttributedString+Helper.m */; };
+		046BF6A31D222BDF0050E9F2 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF69E1D222BDF0050E9F2 /* NSString+Helper.m */; };
+		046BF6A41D222BDF0050E9F2 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF6A01D222BDF0050E9F2 /* UIImageView+SDWebImage.m */; };
+		046BF6A51D222BDF0050E9F2 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF6A21D222BDF0050E9F2 /* UIView+Toast.m */; };
+		046BF6A91D2253E10050E9F2 /* DJDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF6A81D2253E10050E9F2 /* DJDetailsViewController.m */; };
 		048844BD1D1D06D20022FD58 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844BB1D1D06D20022FD58 /* RootClass.m */; };
 		048844C01D1D127D0022FD58 /* DJScrollTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844BF1D1D127D0022FD58 /* DJScrollTableView.m */; };
 		048844C41D1D1F9E0022FD58 /* SJSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844C31D1D1F9E0022FD58 /* SJSearchViewController.m */; };
@@ -41,7 +54,6 @@
 		048844CA1D1D2A560022FD58 /* DJSecondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844C91D1D2A560022FD58 /* DJSecondModel.m */; };
 		048844CE1D1D2D260022FD58 /* DJSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844CD1D1D2D260022FD58 /* DJSingleTableViewCell.m */; };
 		048844D11D1D2D370022FD58 /* DJGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844D01D1D2D370022FD58 /* DJGroupTableViewCell.m */; };
-		04B4C67C1D1D672900D13544 /* NSMutableAttributedString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C67B1D1D672900D13544 /* NSMutableAttributedString+Helper.m */; };
 		0B7DAAA90D5EA866F2A9B947 /* libPods-电商 项目UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CF2210C61CC0B26926E8EC /* libPods-电商 项目UITests.a */; };
 		7D64240D39B2FB220F604D8F /* libPods-电商 项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDC098EAC5B9B8DCF41A908 /* libPods-电商 项目.a */; };
 		B2036026F6FF579542A8710B /* libPods-电商 项目Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */; };
@@ -75,10 +87,18 @@
 		045B465C1D1B80F400145380 /* UMThirdLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMThirdLogin.m; sourceTree = "<group>"; };
 		045B465E1D1B80FD00145380 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		045B465F1D1B80FD00145380 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		045B46611D1B810800145380 /* view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
-		045B46621D1B810800145380 /* view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
 		045B466E1D1BC18100145380 /* DJButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJButtonView.h; sourceTree = "<group>"; };
 		045B466F1D1BC18100145380 /* DJButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJButtonView.m; sourceTree = "<group>"; };
+		0462297E1D239ACD00E5BA13 /* DJClassListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJClassListModel.h; sourceTree = "<group>"; };
+		0462297F1D239ACD00E5BA13 /* DJClassListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJClassListModel.m; sourceTree = "<group>"; };
+		046229811D23A71900E5BA13 /* ThreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeView.h; sourceTree = "<group>"; };
+		046229821D23A71900E5BA13 /* ThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeView.m; sourceTree = "<group>"; };
+		046229841D23BA9400E5BA13 /* DJLandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJLandingViewController.h; sourceTree = "<group>"; };
+		046229851D23BA9400E5BA13 /* DJLandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJLandingViewController.m; sourceTree = "<group>"; };
+		046229871D23BAB000E5BA13 /* DJAddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJAddView.h; sourceTree = "<group>"; };
+		046229881D23BAB000E5BA13 /* DJAddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJAddView.m; sourceTree = "<group>"; };
+		0462298A1D23BAC200E5BA13 /* DJLanding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJLanding.h; sourceTree = "<group>"; };
+		0462298B1D23BAC200E5BA13 /* DJLanding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJLanding.m; sourceTree = "<group>"; };
 		046269EE1D20B7300099CFE0 /* DJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCollectionView.h; sourceTree = "<group>"; };
 		046269EF1D20B7300099CFE0 /* DJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCollectionView.m; sourceTree = "<group>"; };
 		046269F11D20BB0D0099CFE0 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -87,6 +107,12 @@
 		046269F51D20C3350099CFE0 /* DJCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCollectionReusableView.m; sourceTree = "<group>"; };
 		046269F91D20C9FB0099CFE0 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
 		046269FA1D20C9FB0099CFE0 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		04626A021D210DF40099CFE0 /* UIImageView+DJImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DJImage.h"; sourceTree = "<group>"; };
+		04626A031D210DF40099CFE0 /* UIImageView+DJImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DJImage.m"; sourceTree = "<group>"; };
+		04626A081D2112390099CFE0 /* DJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCollectionViewCell.h; sourceTree = "<group>"; };
+		04626A091D2112390099CFE0 /* DJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCollectionViewCell.m; sourceTree = "<group>"; };
+		04626A0D1D212D0F0099CFE0 /* DJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJTableViewController.h; sourceTree = "<group>"; };
+		04626A0E1D212D0F0099CFE0 /* DJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJTableViewController.m; sourceTree = "<group>"; };
 		046523041D12C2A20036E70B /* 电商 项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电商 项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046523081D12C2A20036E70B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0465230A1D12C2A20036E70B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +146,18 @@
 		046523511D12C2F20036E70B /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstView.h; path = "电商项目/FirstView.h"; sourceTree = "<group>"; };
 		046523521D12C2F20036E70B /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstView.m; path = "电商项目/FirstView.m"; sourceTree = "<group>"; };
 		0465235A1D12C2F20036E70B /* views.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = views.plist; path = "电商项目/views.plist"; sourceTree = "<group>"; };
+		046BF6961D221E1D0050E9F2 /* DJGoodsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJGoodsView.h; sourceTree = "<group>"; };
+		046BF6971D221E1D0050E9F2 /* DJGoodsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJGoodsView.m; sourceTree = "<group>"; };
+		046BF69A1D2228550050E9F2 /* NSMutableAttributedString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Helper.h"; sourceTree = "<group>"; };
+		046BF69B1D2228550050E9F2 /* NSMutableAttributedString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Helper.m"; sourceTree = "<group>"; };
+		046BF69D1D222BDF0050E9F2 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
+		046BF69E1D222BDF0050E9F2 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
+		046BF69F1D222BDF0050E9F2 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		046BF6A01D222BDF0050E9F2 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		046BF6A11D222BDF0050E9F2 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		046BF6A21D222BDF0050E9F2 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		046BF6A71D2253E10050E9F2 /* DJDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJDetailsViewController.h; sourceTree = "<group>"; };
+		046BF6A81D2253E10050E9F2 /* DJDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJDetailsViewController.m; sourceTree = "<group>"; };
 		048844BB1D1D06D20022FD58 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
 		048844BC1D1D06D20022FD58 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
 		048844BE1D1D127D0022FD58 /* DJScrollTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJScrollTableView.h; sourceTree = "<group>"; };
@@ -134,8 +172,6 @@
 		048844CD1D1D2D260022FD58 /* DJSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJSingleTableViewCell.m; sourceTree = "<group>"; };
 		048844CF1D1D2D370022FD58 /* DJGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJGroupTableViewCell.h; sourceTree = "<group>"; };
 		048844D01D1D2D370022FD58 /* DJGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJGroupTableViewCell.m; sourceTree = "<group>"; };
-		04B4C67A1D1D672900D13544 /* NSMutableAttributedString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Helper.h"; sourceTree = "<group>"; };
-		04B4C67B1D1D672900D13544 /* NSMutableAttributedString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Helper.m"; sourceTree = "<group>"; };
 		1016A763890F74CB3A8754FA /* Pods-电商 项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目/Pods-电商 项目.debug.xcconfig"; sourceTree = "<group>"; };
 		3F1E7347979C35697281FBE1 /* Pods-电商 项目Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商 项目Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-电商 项目Tests/Pods-电商 项目Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商 项目Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,8 +234,8 @@
 		045B46591D1B806D00145380 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				045B46611D1B810800145380 /* view.h */,
-				045B46621D1B810800145380 /* view.m */,
+				046229811D23A71900E5BA13 /* ThreeView.h */,
+				046229821D23A71900E5BA13 /* ThreeView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -247,6 +283,8 @@
 				046269F51D20C3350099CFE0 /* DJCollectionReusableView.m */,
 				046269F11D20BB0D0099CFE0 /* CollectionViewCell.h */,
 				046269F21D20BB0D0099CFE0 /* CollectionViewCell.m */,
+				04626A081D2112390099CFE0 /* DJCollectionViewCell.h */,
+				04626A091D2112390099CFE0 /* DJCollectionViewCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -258,6 +296,17 @@
 				046269F91D20C9FB0099CFE0 /* ClassModel.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		04626A0B1D212CAE0099CFE0 /* 商品列表 */ = {
+			isa = PBXGroup;
+			children = (
+				04626A0D1D212D0F0099CFE0 /* DJTableViewController.h */,
+				04626A0E1D212D0F0099CFE0 /* DJTableViewController.m */,
+				046BF6951D221DCD0050E9F2 /* view */,
+				046BF6991D2227280050E9F2 /* model */,
+			);
+			name = "商品列表";
 			sourceTree = "<group>";
 		};
 		046522FB1D12C2A20036E70B = {
@@ -329,6 +378,12 @@
 			children = (
 				046523411D12C2F20036E70B /* DJAddViewController.h */,
 				046523421D12C2F20036E70B /* DJAddViewController.m */,
+				046229871D23BAB000E5BA13 /* DJAddView.h */,
+				046229881D23BAB000E5BA13 /* DJAddView.m */,
+				046229841D23BA9400E5BA13 /* DJLandingViewController.h */,
+				046229851D23BA9400E5BA13 /* DJLandingViewController.m */,
+				0462298A1D23BAC200E5BA13 /* DJLanding.h */,
+				0462298B1D23BAC200E5BA13 /* DJLanding.m */,
 			);
 			name = "注册";
 			sourceTree = "<group>";
@@ -387,6 +442,8 @@
 		046523711D12C3950036E70B /* 视图控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				046BF6A61D2253980050E9F2 /* 商品详情 */,
+				04626A0B1D212CAE0099CFE0 /* 商品列表 */,
 				048844C11D1D1F6D0022FD58 /* 搜索 */,
 				046523701D12C3940036E70B /* 限时特卖 */,
 				0465236F1D12C3940036E70B /* 分类 */,
@@ -420,6 +477,33 @@
 			name = view;
 			sourceTree = "<group>";
 		};
+		046BF6951D221DCD0050E9F2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				046BF6961D221E1D0050E9F2 /* DJGoodsView.h */,
+				046BF6971D221E1D0050E9F2 /* DJGoodsView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		046BF6991D2227280050E9F2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0462297E1D239ACD00E5BA13 /* DJClassListModel.h */,
+				0462297F1D239ACD00E5BA13 /* DJClassListModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		046BF6A61D2253980050E9F2 /* 商品详情 */ = {
+			isa = PBXGroup;
+			children = (
+				046BF6A71D2253E10050E9F2 /* DJDetailsViewController.h */,
+				046BF6A81D2253E10050E9F2 /* DJDetailsViewController.m */,
+			);
+			name = "商品详情";
+			sourceTree = "<group>";
+		};
 		048844C11D1D1F6D0022FD58 /* 搜索 */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,8 +527,16 @@
 		04B4C6791D1D665D00D13544 /* 类别 */ = {
 			isa = PBXGroup;
 			children = (
-				04B4C67A1D1D672900D13544 /* NSMutableAttributedString+Helper.h */,
-				04B4C67B1D1D672900D13544 /* NSMutableAttributedString+Helper.m */,
+				04626A021D210DF40099CFE0 /* UIImageView+DJImage.h */,
+				04626A031D210DF40099CFE0 /* UIImageView+DJImage.m */,
+				046BF69A1D2228550050E9F2 /* NSMutableAttributedString+Helper.h */,
+				046BF69B1D2228550050E9F2 /* NSMutableAttributedString+Helper.m */,
+				046BF69D1D222BDF0050E9F2 /* NSString+Helper.h */,
+				046BF69E1D222BDF0050E9F2 /* NSString+Helper.m */,
+				046BF69F1D222BDF0050E9F2 /* UIImageView+SDWebImage.h */,
+				046BF6A01D222BDF0050E9F2 /* UIImageView+SDWebImage.m */,
+				046BF6A11D222BDF0050E9F2 /* UIView+Toast.h */,
+				046BF6A21D222BDF0050E9F2 /* UIView+Toast.m */,
 			);
 			name = "类别";
 			sourceTree = "<group>";
@@ -750,13 +842,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				045B46541D1B7FEF00145380 /* DJMyTableHeaderView.m in Sources */,
+				046BF6A51D222BDF0050E9F2 /* UIView+Toast.m in Sources */,
+				04626A041D210DF40099CFE0 /* UIImageView+DJImage.m in Sources */,
 				046523621D12C2F20036E70B /* DJOpenViewController.m in Sources */,
-				04B4C67C1D1D672900D13544 /* NSMutableAttributedString+Helper.m in Sources */,
 				0465230C1D12C2A20036E70B /* AppDelegate.m in Sources */,
 				046269F01D20B7300099CFE0 /* DJCollectionView.m in Sources */,
 				048844C01D1D127D0022FD58 /* DJScrollTableView.m in Sources */,
 				046523641D12C2F20036E70B /* DJTabBarViewController.m in Sources */,
+				04626A0F1D212D0F0099CFE0 /* DJTableViewController.m in Sources */,
+				046BF6A91D2253E10050E9F2 /* DJDetailsViewController.m in Sources */,
 				048844CA1D1D2A560022FD58 /* DJSecondModel.m in Sources */,
+				0462298C1D23BAC200E5BA13 /* DJLanding.m in Sources */,
+				04626A0A1D2112390099CFE0 /* DJCollectionViewCell.m in Sources */,
 				045B46551D1B7FEF00145380 /* DJTableView.m in Sources */,
 				048844C41D1D1F9E0022FD58 /* SJSearchViewController.m in Sources */,
 				045B46561D1B7FEF00145380 /* DJTableViewCell.m in Sources */,
@@ -765,11 +862,18 @@
 				046523611D12C2F20036E70B /* DJNavigationViewController.m in Sources */,
 				045B46701D1BC18100145380 /* DJButtonView.m in Sources */,
 				048844CE1D1D2D260022FD58 /* DJSingleTableViewCell.m in Sources */,
+				046BF6981D221E1D0050E9F2 /* DJGoodsView.m in Sources */,
+				046229891D23BAB000E5BA13 /* DJAddView.m in Sources */,
 				045B46601D1B80FD00145380 /* BaseViewController.m in Sources */,
-				045B46631D1B810800145380 /* view.m in Sources */,
+				046229861D23BA9400E5BA13 /* DJLandingViewController.m in Sources */,
+				046BF6A31D222BDF0050E9F2 /* NSString+Helper.m in Sources */,
 				045B465D1D1B80F400145380 /* UMThirdLogin.m in Sources */,
+				046229831D23A71900E5BA13 /* ThreeView.m in Sources */,
+				046BF69C1D2228550050E9F2 /* NSMutableAttributedString+Helper.m in Sources */,
 				046523661D12C2F20036E70B /* FirstView.m in Sources */,
+				046229801D239ACD00E5BA13 /* DJClassListModel.m in Sources */,
 				046523631D12C2F20036E70B /* DJShopingCarViewController.m in Sources */,
+				046BF6A41D222BDF0050E9F2 /* UIImageView+SDWebImage.m in Sources */,
 				048844BD1D1D06D20022FD58 /* RootClass.m in Sources */,
 				046269F61D20C3350099CFE0 /* DJCollectionReusableView.m in Sources */,
 				048844D11D1D2D370022FD58 /* DJGroupTableViewCell.m in Sources */,

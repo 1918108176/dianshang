@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^dataBlock)(NSDictionary *);
+//typedef void(^dataBlock)(NSDictionary *);
 
 @interface DJCollectionView : UICollectionView
 

@@ -19,7 +19,7 @@
     UINavigationBar *navigationBar = [UINavigationBar appearance];
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_backImage"] forBarMetrics:UIBarMetricsDefault];
     [navigationBar setTitleTextAttributes:@{
-                                            NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor greenColor]
+                                            NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]
                                             }];
 }
 

@@ -1,24 +1,29 @@
 //
-//  view.m
+//  ThreeView.m
 //  电商 项目
 //
-//  Created by ma c on 16/6/22.
+//  Created by ma c on 16/6/29.
 //  Copyright © 2016年 ZCJ. All rights reserved.
 //
 
-#import "view.h"
+#import "ThreeView.h"
 
-@interface view ()
 
+@interface ThreeView ()
+
+/**提示*/
 @property (strong,nonatomic) UILabel *label;
+/**分割线*/
 @property (strong,nonatomic) UILabel *lineLabel;
+/**qq*/
 @property (strong,nonatomic) UIButton *qqButton;
+/**微信*/
 @property (strong,nonatomic) UIButton *WeiBotton;
+/**新浪*/
 @property (strong,nonatomic) UIButton *xinBotton;
 
 @end
-@implementation view
-
+@implementation ThreeView
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -34,38 +39,33 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    __weak typeof(self)ws = self;
+    __weak typeof(self)weakSelf = self;
     [_lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(ws.mas_left).offset(15);
-        make.right.equalTo(ws.mas_right).offset(-15);
-        make.top.equalTo(ws.mas_top).offset(8);
+        make.left.equalTo(weakSelf.mas_left).offset(15);
+        make.right.equalTo(weakSelf.mas_right).offset(-15);
+        make.top.equalTo(weakSelf.mas_top).offset(10);
         make.height.equalTo(1);
     }];
     
     [_label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws);
-        make.left.equalTo(ws.mas_left).offset(100);
-        make.right.equalTo(ws.mas_right).offset(-100);
-        make.height.equalTo(16);
-    }];
-    [_qqButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.mas_top).offset(25);
-        make.left.equalTo(ws.mas_left).offset(60);
-        make.right.equalTo(ws.mas_left).offset(105);
-        make.height.equalTo(45);
+        make.centerY.equalTo(weakSelf.lineLabel.mas_centerY);
+        make.size.equalTo(CGSizeMake(85, 16));
+        make.centerX.equalTo(weakSelf.lineLabel.mas_centerX);
     }];
     [_WeiBotton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.mas_top).offset(25);
-        make.height.equalTo(45);
-        make.left.equalTo(ws.qqButton.mas_right).offset(60);
-        make.right.equalTo(ws.qqButton.mas_right).offset(105);
+        make.size.equalTo(CGSizeMake(45, 45));
+        make.centerX.equalTo(weakSelf.mas_centerX);
+        make.top.equalTo(weakSelf.label.mas_bottom).offset(20);
+    }];
+    [_qqButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(CGSizeMake(45, 45));
+        make.right.equalTo(weakSelf.WeiBotton.mas_left).offset(-(VIEW_WIDTH-135)/4);
+        make.top.equalTo(weakSelf.label.mas_bottom).offset(20);
     }];
     [_xinBotton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.mas_top).offset(25);
-        make.height.equalTo(45);
-        make.right.equalTo(ws.mas_right).offset(-60);
-        make.left.equalTo(ws.WeiBotton.mas_right).offset(60);
-        
+        make.size.equalTo(CGSizeMake(45, 45));
+        make.left.equalTo(weakSelf.WeiBotton.mas_right).offset((VIEW_WIDTH-135)/4);
+        make.top.equalTo(weakSelf.label.mas_bottom).offset(20);
     }];
 }
 
@@ -75,13 +75,14 @@
         _label.text = @"一键登录";
         _label.textColor = [UIColor grayColor];
         _label.textAlignment = NSTextAlignmentCenter;
+        _label.backgroundColor = RGB(245, 245, 245);
     }
     return _label;
 }
 - (UILabel *)lineLabel{
     if (!_lineLabel) {
         _lineLabel = [[UILabel alloc]init];
-        _lineLabel.backgroundColor = [UIColor grayColor];
+        _lineLabel.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     return _lineLabel;
 }
@@ -115,5 +116,4 @@
         _QQLoginBlock();
     }
 }
-
 @end

@@ -32,17 +32,6 @@ typedef void (^FailBlock)(NSURLSessionDataTask *task,NSError *error);
             withSucess:(SucessBlock)sucess
                   Fail:(FailBlock)failBlock;
 
-/**
- UIView展示提示框
- tostString:要提示的文字
- */
-- (void)showTostView:(NSString *)tostString;
-
-
-/**
- 返回按钮
- */
-- (void)addBackButtonOnNav;
 
 
 @end

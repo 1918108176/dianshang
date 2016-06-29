@@ -11,10 +11,6 @@
 
 static NSString * const BaseURLString = @"http://123.57.141.249:8080/beautalk/";
 
-@interface BaseViewController ()
-
-@end
-
 @implementation AFNetworkingClient
 
 + (instancetype)sharedClient{
@@ -33,6 +29,11 @@ static NSString * const BaseURLString = @"http://123.57.141.249:8080/beautalk/";
 @end
 
 @implementation BaseViewController
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+}
 
 //GET请求/
 - (void)getRequestURL:(NSString *)URL withDic:(NSDictionary *)dic withSucess:(SucessBlock)sucess Fail:(FailBlock)failBlock{
@@ -49,36 +50,15 @@ static NSString * const BaseURLString = @"http://123.57.141.249:8080/beautalk/";
 
 //POST请求/
 - (void)postRequestURL:(NSString *)URL withDic:(NSDictionary *)dic withSucess:(SucessBlock)sucess Fail:(FailBlock)failBlock{
-    
-    __weak typeof(self)weakSelf = self;
     [[AFNetworkingClient sharedClient]POST:URL parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (sucess) {
             sucess(task,responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [weakSelf showTostView:@"请检查网络连接状态"];
         if (failBlock) {
             failBlock(task,error);
         }
     }];
 }
 
-- (void)showTostView:(NSString *)tostString{
-    
-}
-- (void)addBackButtonOnNav{
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, 30, 30);
-    [button setImage:[UIImage imageNamed:@"详情界面返回按钮"] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(backViewController) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *barButton = [[UIBarButtonItem alloc]initWithCustomView:button];
-    self.navigationItem.leftBarButtonItem = barButton;
-}
-- (void)backViewController{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (void)dealloc{
-    [[AFNetworkingClient sharedClient].operationQueue cancelAllOperations];
-}
 @end

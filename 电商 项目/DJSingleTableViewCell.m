@@ -7,8 +7,8 @@
 //
 
 #import "DJSingleTableViewCell.h"
+#import "UIImageView+DJImage.h"
 #import "NSMutableAttributedString+Helper.h"
-
 @interface DJSingleTableViewCell ()
 
 /**商品图片*/
@@ -49,14 +49,60 @@
 #pragma mark -
 #pragma mark - 数据
 - (void)setSingleModel:(DJModel *)singleModel{
-    
-    
-    
-    
+    [_goodsImage getImageForURL:singleModel.CountryImg];
+    _titleLabel.text = singleModel.Title;
+    _contentLabel.text = singleModel.GoodsIntro;
+    _priceLabel.attributedText = [NSMutableAttributedString makeStrikethroughAttributedString:singleModel.DomesticPrice :singleModel.Price rebateString:nil];
 }
 #pragma mark -
 #pragma mark - 约束
-
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    __weak typeof(self)weakSelf = self;
+    [_goodsImage mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(CGSizeMake(142, 142));
+        make.left.equalTo(weakSelf.mas_left).offset(10);
+        make.top.equalTo(weakSelf.mas_top).offset(12);
+    }];
+    [_countryImage mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.goodsImage.mas_top).offset(10);
+        make.right.equalTo(weakSelf.goodsImage.mas_left).offset(10);
+        make.size.equalTo(CGSizeMake(25, 20));
+    }];
+    [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(weakSelf.goodsImage.mas_right).offset(10);
+        make.top.equalTo(weakSelf.mas_top).offset(25);
+        make.right.equalTo(weakSelf.mas_right).offset(-17);
+        make.height.equalTo(15);
+    }];
+    [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.titleLabel.mas_bottom);
+        make.height.equalTo(60);
+        make.right.equalTo(weakSelf.mas_right).offset(-17);
+        make.left.equalTo(weakSelf.goodsImage.mas_right).offset(10);
+    }];
+    
+    [_priceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(17);
+        make.left.equalTo(weakSelf.goodsImage.mas_right).offset(10);
+        make.bottom.equalTo(weakSelf.mas_bottom).offset(-27);
+        make.right.equalTo(weakSelf.mas_right).offset(-17);//
+    }];
+    
+    [_buyCarButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(weakSelf.mas_right).offset(-45);
+        make.bottom.equalTo(weakSelf.mas_bottom).offset(-20);
+        make.size.equalTo(CGSizeMake(35, 35));
+    }];
+    
+    [_lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.mas_top).offset(1);
+        make.left.equalTo(weakSelf.mas_left);
+        make.right.equalTo(weakSelf.mas_right);
+        make.height.equalTo(1);
+    }];
+    
+}
 
 #pragma mark -
 #pragma mark - 懒加载

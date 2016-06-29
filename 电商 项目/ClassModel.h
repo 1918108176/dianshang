@@ -6,7 +6,6 @@
 @property (nonatomic, strong) NSString * goodsTypeName;
 @property (nonatomic, strong) NSString * imgView;
 
--(instancetype)initWithDictionary:(NSDictionary *)dictionary;
++ (instancetype)getTheDataSource:(NSDictionary*)dic;
 
--(NSDictionary *)toDictionary;
 @end

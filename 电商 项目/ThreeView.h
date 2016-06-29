@@ -1,16 +1,17 @@
 //
-//  view.h
+//  ThreeView.h
 //  电商 项目
 //
-//  Created by ma c on 16/6/22.
+//  Created by ma c on 16/6/29.
 //  Copyright © 2016年 ZCJ. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 typedef void(^QQLoginMethod)();
-@interface view : UIView
+@interface ThreeView : UIView
 
 @property (copy, nonatomic) QQLoginMethod QQLoginBlock;
+
 
 @end

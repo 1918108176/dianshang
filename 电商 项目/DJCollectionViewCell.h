@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.h
+//  DJCollectionViewCell.h
 //  电商 项目
 //
 //  Created by ma c on 16/6/27.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ClassModel.h"
-@interface CollectionViewCell : UICollectionViewCell
+@interface DJCollectionViewCell : UICollectionViewCell
 
 @property (strong,nonatomic) ClassModel *model;
 

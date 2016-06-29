@@ -1,17 +1,18 @@
 //
-//  NSMutableAttributedString+Helper.h
-//  电商 项目
+//  NSString+Helper.h
+//  SXT
 //
-//  Created by ma c on 16/6/24.
-//  Copyright © 2016年 ZCJ. All rights reserved.
+//  Created by 赵金鹏 on 16/4/6.
+//  Copyright © 2016年 赵金鹏. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface NSMutableAttributedString (Helper)
 
+/**制作一个带删除线的字符串*/
++ (NSMutableAttributedString *)makeStrikethroughAttributedString:(NSString *)frontString :(NSString *)backString rebateString:(NSString *)rebateStr;
 
-- (void)downloadImage:(UIImageView *)imageView place:(UIImage *)image;
-
-
+/**制作确认订单的价格*/
++ (NSMutableAttributedString *)makeOrderPriceText:(NSString *)priceStr;
 @end

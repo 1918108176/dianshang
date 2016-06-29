@@ -44,14 +44,14 @@
     return 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *cellID = @"cellID";
+    static NSString *cellID = @"cellID";
     if (_isSingle) {
         DJSingleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
         if (!cell) {
             cell = [[DJSingleTableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:cellID];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
-        
+        cell.singleModel = self.singleListArray[indexPath.row];
         return cell;
     } else {
         DJGroupTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
@@ -59,7 +59,7 @@
             cell = [[DJGroupTableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:cellID];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
-        
+        cell.groupBuyModel = self.groupBuyListArray[indexPath.row];
         return cell;
     }
 }

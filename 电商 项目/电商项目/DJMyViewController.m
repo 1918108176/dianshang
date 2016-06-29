@@ -29,7 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:self.myTableView];
     __weak typeof(self)weakSelf = self;
     [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {

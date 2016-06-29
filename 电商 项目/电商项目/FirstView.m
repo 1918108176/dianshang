@@ -11,11 +11,17 @@
 
 @interface FirstView ()
 
+/**背景label*/
 @property (strong,nonatomic) UILabel *backLabel;
+/**手机号TextField*/
 @property (strong,nonatomic) UITextField *nameText;
+/**密码TextField*/
 @property (strong,nonatomic) UITextField *passText;
+/**分割线*/
 @property (strong,nonatomic) UILabel *lineLabel;
+/**注册*/
 @property (strong,nonatomic) UIButton *lodaingButton;
+/**登陆*/
 @property (strong,nonatomic) UIButton *loginButton;
 
 @end
