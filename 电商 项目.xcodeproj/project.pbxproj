@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045939F61D24A9C100918B2E /* GCDCountDownTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 045939F51D24A9C100918B2E /* GCDCountDownTime.m */; };
+		045939F81D24FB7700918B2E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045939F71D24FB7700918B2E /* QuartzCore.framework */; };
+		045939FD1D254E2700918B2E /* DJOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045939FC1D254E2700918B2E /* DJOrderViewController.m */; };
+		04593A011D254E7900918B2E /* DJBuyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04593A001D254E7900918B2E /* DJBuyCarViewController.m */; };
+		04593A061D254EC800918B2E /* DJBuyCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04593A051D254EC800918B2E /* DJBuyCarModel.m */; };
+		04593A091D254F4E00918B2E /* DJBuyCarTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04593A081D254F4E00918B2E /* DJBuyCarTableView.m */; };
+		04593A0C1D254F6900918B2E /* DJBuyCarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04593A0B1D254F6900918B2E /* DJBuyCarTableViewCell.m */; };
 		045B46541D1B7FEF00145380 /* DJMyTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B464F1D1B7FEF00145380 /* DJMyTableHeaderView.m */; };
 		045B46551D1B7FEF00145380 /* DJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46511D1B7FEF00145380 /* DJTableView.m */; };
 		045B46561D1B7FEF00145380 /* DJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B46531D1B7FEF00145380 /* DJTableViewCell.m */; };
@@ -36,7 +43,6 @@
 		046523601D12C2F20036E70B /* DJMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523461D12C2F20036E70B /* DJMyViewController.m */; };
 		046523611D12C2F20036E70B /* DJNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523481D12C2F20036E70B /* DJNavigationViewController.m */; };
 		046523621D12C2F20036E70B /* DJOpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465234A1D12C2F20036E70B /* DJOpenViewController.m */; };
-		046523631D12C2F20036E70B /* DJShopingCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465234C1D12C2F20036E70B /* DJShopingCarViewController.m */; };
 		046523641D12C2F20036E70B /* DJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465234E1D12C2F20036E70B /* DJTabBarViewController.m */; };
 		046523651D12C2F20036E70B /* DJTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523501D12C2F20036E70B /* DJTimeViewController.m */; };
 		046523661D12C2F20036E70B /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046523521D12C2F20036E70B /* FirstView.m */; };
@@ -47,6 +53,7 @@
 		046BF6A41D222BDF0050E9F2 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF6A01D222BDF0050E9F2 /* UIImageView+SDWebImage.m */; };
 		046BF6A51D222BDF0050E9F2 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF6A21D222BDF0050E9F2 /* UIView+Toast.m */; };
 		046BF6A91D2253E10050E9F2 /* DJDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BF6A81D2253E10050E9F2 /* DJDetailsViewController.m */; };
+		0479AA811D2751A600DF0896 /* DJFourButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479AA801D2751A600DF0896 /* DJFourButtonView.m */; };
 		048844BD1D1D06D20022FD58 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844BB1D1D06D20022FD58 /* RootClass.m */; };
 		048844C01D1D127D0022FD58 /* DJScrollTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844BF1D1D127D0022FD58 /* DJScrollTableView.m */; };
 		048844C41D1D1F9E0022FD58 /* SJSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048844C31D1D1F9E0022FD58 /* SJSearchViewController.m */; };
@@ -77,6 +84,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045939F41D24A9C100918B2E /* GCDCountDownTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDCountDownTime.h; sourceTree = "<group>"; };
+		045939F51D24A9C100918B2E /* GCDCountDownTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDCountDownTime.m; sourceTree = "<group>"; };
+		045939F71D24FB7700918B2E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		045939FB1D254E2700918B2E /* DJOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJOrderViewController.h; sourceTree = "<group>"; };
+		045939FC1D254E2700918B2E /* DJOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJOrderViewController.m; sourceTree = "<group>"; };
+		045939FF1D254E7900918B2E /* DJBuyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJBuyCarViewController.h; sourceTree = "<group>"; };
+		04593A001D254E7900918B2E /* DJBuyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJBuyCarViewController.m; sourceTree = "<group>"; };
+		04593A041D254EC800918B2E /* DJBuyCarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJBuyCarModel.h; sourceTree = "<group>"; };
+		04593A051D254EC800918B2E /* DJBuyCarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJBuyCarModel.m; sourceTree = "<group>"; };
+		04593A071D254F4E00918B2E /* DJBuyCarTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJBuyCarTableView.h; sourceTree = "<group>"; };
+		04593A081D254F4E00918B2E /* DJBuyCarTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJBuyCarTableView.m; sourceTree = "<group>"; };
+		04593A0A1D254F6900918B2E /* DJBuyCarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJBuyCarTableViewCell.h; sourceTree = "<group>"; };
+		04593A0B1D254F6900918B2E /* DJBuyCarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJBuyCarTableViewCell.m; sourceTree = "<group>"; };
 		045B464E1D1B7FEF00145380 /* DJMyTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMyTableHeaderView.h; sourceTree = "<group>"; };
 		045B464F1D1B7FEF00145380 /* DJMyTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMyTableHeaderView.m; sourceTree = "<group>"; };
 		045B46501D1B7FEF00145380 /* DJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJTableView.h; sourceTree = "<group>"; };
@@ -137,8 +157,6 @@
 		046523481D12C2F20036E70B /* DJNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJNavigationViewController.m; path = "电商项目/DJNavigationViewController.m"; sourceTree = "<group>"; };
 		046523491D12C2F20036E70B /* DJOpenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJOpenViewController.h; path = "电商项目/DJOpenViewController.h"; sourceTree = "<group>"; };
 		0465234A1D12C2F20036E70B /* DJOpenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJOpenViewController.m; path = "电商项目/DJOpenViewController.m"; sourceTree = "<group>"; };
-		0465234B1D12C2F20036E70B /* DJShopingCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJShopingCarViewController.h; path = "电商项目/DJShopingCarViewController.h"; sourceTree = "<group>"; };
-		0465234C1D12C2F20036E70B /* DJShopingCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJShopingCarViewController.m; path = "电商项目/DJShopingCarViewController.m"; sourceTree = "<group>"; };
 		0465234D1D12C2F20036E70B /* DJTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJTabBarViewController.h; path = "电商项目/DJTabBarViewController.h"; sourceTree = "<group>"; };
 		0465234E1D12C2F20036E70B /* DJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJTabBarViewController.m; path = "电商项目/DJTabBarViewController.m"; sourceTree = "<group>"; };
 		0465234F1D12C2F20036E70B /* DJTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJTimeViewController.h; path = "电商项目/DJTimeViewController.h"; sourceTree = "<group>"; };
@@ -158,6 +176,8 @@
 		046BF6A21D222BDF0050E9F2 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		046BF6A71D2253E10050E9F2 /* DJDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJDetailsViewController.h; sourceTree = "<group>"; };
 		046BF6A81D2253E10050E9F2 /* DJDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJDetailsViewController.m; sourceTree = "<group>"; };
+		0479AA7F1D2751A600DF0896 /* DJFourButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFourButtonView.h; sourceTree = "<group>"; };
+		0479AA801D2751A600DF0896 /* DJFourButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFourButtonView.m; sourceTree = "<group>"; };
 		048844BB1D1D06D20022FD58 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
 		048844BC1D1D06D20022FD58 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
 		048844BE1D1D127D0022FD58 /* DJScrollTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJScrollTableView.h; sourceTree = "<group>"; };
@@ -188,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045939F81D24FB7700918B2E /* QuartzCore.framework in Frameworks */,
 				7D64240D39B2FB220F604D8F /* libPods-电商 项目.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,11 +232,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045939F31D24A97B00918B2E /* 验证码使用的GCD倒计时 */ = {
+			isa = PBXGroup;
+			children = (
+				045939F41D24A9C100918B2E /* GCDCountDownTime.h */,
+				045939F51D24A9C100918B2E /* GCDCountDownTime.m */,
+			);
+			name = "验证码使用的GCD倒计时";
+			sourceTree = "<group>";
+		};
+		045939F91D24FF4300918B2E /* 注册的下一步 */ = {
+			isa = PBXGroup;
+			children = (
+				046229841D23BA9400E5BA13 /* DJLandingViewController.h */,
+				046229851D23BA9400E5BA13 /* DJLandingViewController.m */,
+				0462298A1D23BAC200E5BA13 /* DJLanding.h */,
+				0462298B1D23BAC200E5BA13 /* DJLanding.m */,
+			);
+			name = "注册的下一步";
+			sourceTree = "<group>";
+		};
+		045939FA1D254DF500918B2E /* 确认订单 */ = {
+			isa = PBXGroup;
+			children = (
+				045939FB1D254E2700918B2E /* DJOrderViewController.h */,
+				045939FC1D254E2700918B2E /* DJOrderViewController.m */,
+				045939FE1D254E3200918B2E /* view */,
+			);
+			name = "确认订单";
+			sourceTree = "<group>";
+		};
+		045939FE1D254E3200918B2E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		04593A021D254E8200918B2E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				04593A071D254F4E00918B2E /* DJBuyCarTableView.h */,
+				04593A081D254F4E00918B2E /* DJBuyCarTableView.m */,
+				04593A0A1D254F6900918B2E /* DJBuyCarTableViewCell.h */,
+				04593A0B1D254F6900918B2E /* DJBuyCarTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		04593A031D254E9800918B2E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				04593A041D254EC800918B2E /* DJBuyCarModel.h */,
+				04593A051D254EC800918B2E /* DJBuyCarModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		045B46571D1B806D00145380 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
 				04B4C6791D1D665D00D13544 /* 类别 */,
-				045B465A1D1B807000145380 /* 网络请求 */,
+				045B465A1D1B807000145380 /* 基类 */,
 				045B46591D1B806D00145380 /* view */,
 				045B46581D1B806D00145380 /* 第三方登陆 */,
 			);
@@ -240,13 +318,13 @@
 			name = view;
 			sourceTree = "<group>";
 		};
-		045B465A1D1B807000145380 /* 网络请求 */ = {
+		045B465A1D1B807000145380 /* 基类 */ = {
 			isa = PBXGroup;
 			children = (
 				045B465E1D1B80FD00145380 /* BaseViewController.h */,
 				045B465F1D1B80FD00145380 /* BaseViewController.m */,
 			);
-			name = "网络请求";
+			name = "基类";
 			sourceTree = "<group>";
 		};
 		045B46651D1B8B7B00145380 /* view */ = {
@@ -380,10 +458,8 @@
 				046523421D12C2F20036E70B /* DJAddViewController.m */,
 				046229871D23BAB000E5BA13 /* DJAddView.h */,
 				046229881D23BAB000E5BA13 /* DJAddView.m */,
-				046229841D23BA9400E5BA13 /* DJLandingViewController.h */,
-				046229851D23BA9400E5BA13 /* DJLandingViewController.m */,
-				0462298A1D23BAC200E5BA13 /* DJLanding.h */,
-				0462298B1D23BAC200E5BA13 /* DJLanding.m */,
+				045939F91D24FF4300918B2E /* 注册的下一步 */,
+				045939F31D24A97B00918B2E /* 验证码使用的GCD倒计时 */,
 			);
 			name = "注册";
 			sourceTree = "<group>";
@@ -411,8 +487,10 @@
 		0465236E1D12C3930036E70B /* 购物车 */ = {
 			isa = PBXGroup;
 			children = (
-				0465234B1D12C2F20036E70B /* DJShopingCarViewController.h */,
-				0465234C1D12C2F20036E70B /* DJShopingCarViewController.m */,
+				045939FF1D254E7900918B2E /* DJBuyCarViewController.h */,
+				04593A001D254E7900918B2E /* DJBuyCarViewController.m */,
+				04593A021D254E8200918B2E /* view */,
+				04593A031D254E9800918B2E /* model */,
 			);
 			name = "购物车";
 			sourceTree = "<group>";
@@ -442,6 +520,7 @@
 		046523711D12C3950036E70B /* 视图控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				045939FA1D254DF500918B2E /* 确认订单 */,
 				046BF6A61D2253980050E9F2 /* 商品详情 */,
 				04626A0B1D212CAE0099CFE0 /* 商品列表 */,
 				048844C11D1D1F6D0022FD58 /* 搜索 */,
@@ -482,6 +561,8 @@
 			children = (
 				046BF6961D221E1D0050E9F2 /* DJGoodsView.h */,
 				046BF6971D221E1D0050E9F2 /* DJGoodsView.m */,
+				0479AA7F1D2751A600DF0896 /* DJFourButtonView.h */,
+				0479AA801D2751A600DF0896 /* DJFourButtonView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -557,6 +638,7 @@
 		93E5D327BA65ABAB24B99DF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				045939F71D24FB7700918B2E /* QuartzCore.framework */,
 				CCDC098EAC5B9B8DCF41A908 /* libPods-电商 项目.a */,
 				4E862BC3D9D0B02C47F71794 /* libPods-电商 项目Tests.a */,
 				B9CF2210C61CC0B26926E8EC /* libPods-电商 项目UITests.a */,
@@ -850,31 +932,36 @@
 				048844C01D1D127D0022FD58 /* DJScrollTableView.m in Sources */,
 				046523641D12C2F20036E70B /* DJTabBarViewController.m in Sources */,
 				04626A0F1D212D0F0099CFE0 /* DJTableViewController.m in Sources */,
+				04593A091D254F4E00918B2E /* DJBuyCarTableView.m in Sources */,
 				046BF6A91D2253E10050E9F2 /* DJDetailsViewController.m in Sources */,
 				048844CA1D1D2A560022FD58 /* DJSecondModel.m in Sources */,
 				0462298C1D23BAC200E5BA13 /* DJLanding.m in Sources */,
 				04626A0A1D2112390099CFE0 /* DJCollectionViewCell.m in Sources */,
+				0479AA811D2751A600DF0896 /* DJFourButtonView.m in Sources */,
 				045B46551D1B7FEF00145380 /* DJTableView.m in Sources */,
 				048844C41D1D1F9E0022FD58 /* SJSearchViewController.m in Sources */,
 				045B46561D1B7FEF00145380 /* DJTableViewCell.m in Sources */,
 				046523651D12C2F20036E70B /* DJTimeViewController.m in Sources */,
 				0465235E1D12C2F20036E70B /* DJAddViewController.m in Sources */,
+				04593A0C1D254F6900918B2E /* DJBuyCarTableViewCell.m in Sources */,
 				046523611D12C2F20036E70B /* DJNavigationViewController.m in Sources */,
 				045B46701D1BC18100145380 /* DJButtonView.m in Sources */,
 				048844CE1D1D2D260022FD58 /* DJSingleTableViewCell.m in Sources */,
 				046BF6981D221E1D0050E9F2 /* DJGoodsView.m in Sources */,
+				04593A061D254EC800918B2E /* DJBuyCarModel.m in Sources */,
 				046229891D23BAB000E5BA13 /* DJAddView.m in Sources */,
 				045B46601D1B80FD00145380 /* BaseViewController.m in Sources */,
 				046229861D23BA9400E5BA13 /* DJLandingViewController.m in Sources */,
 				046BF6A31D222BDF0050E9F2 /* NSString+Helper.m in Sources */,
 				045B465D1D1B80F400145380 /* UMThirdLogin.m in Sources */,
 				046229831D23A71900E5BA13 /* ThreeView.m in Sources */,
+				045939F61D24A9C100918B2E /* GCDCountDownTime.m in Sources */,
 				046BF69C1D2228550050E9F2 /* NSMutableAttributedString+Helper.m in Sources */,
 				046523661D12C2F20036E70B /* FirstView.m in Sources */,
 				046229801D239ACD00E5BA13 /* DJClassListModel.m in Sources */,
-				046523631D12C2F20036E70B /* DJShopingCarViewController.m in Sources */,
 				046BF6A41D222BDF0050E9F2 /* UIImageView+SDWebImage.m in Sources */,
 				048844BD1D1D06D20022FD58 /* RootClass.m in Sources */,
+				045939FD1D254E2700918B2E /* DJOrderViewController.m in Sources */,
 				046269F61D20C3350099CFE0 /* DJCollectionReusableView.m in Sources */,
 				048844D11D1D2D370022FD58 /* DJGroupTableViewCell.m in Sources */,
 				046523601D12C2F20036E70B /* DJMyViewController.m in Sources */,
@@ -882,6 +969,7 @@
 				046269FB1D20C9FB0099CFE0 /* ClassModel.m in Sources */,
 				0465235F1D12C2F20036E70B /* DJClassViewController.m in Sources */,
 				046269F31D20BB0D0099CFE0 /* CollectionViewCell.m in Sources */,
+				04593A011D254E7900918B2E /* DJBuyCarViewController.m in Sources */,
 				048844C71D1D2A360022FD58 /* DJModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

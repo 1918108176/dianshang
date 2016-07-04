@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AFNetworking.h>
-
+#import <Masonry.h>
+#import <MJExtension.h>
 typedef void(^SucessBlock)(NSURLSessionDataTask *task,id project);
 typedef void (^FailBlock)(NSURLSessionDataTask *task,NSError *error);
 @interface AFNetworkingClient : AFHTTPSessionManager
@@ -32,6 +33,16 @@ typedef void (^FailBlock)(NSURLSessionDataTask *task,NSError *error);
             withSucess:(SucessBlock)sucess
                   Fail:(FailBlock)failBlock;
 
+/**
+ UIView展示提示框
+ tostString:要提示的文字
+ */
+- (void)showTostView:(NSString *)tostString;
 
+
+/**
+ 返回按钮
+ */
+- (void)addBackButtonOnNav;
 
 @end

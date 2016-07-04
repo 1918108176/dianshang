@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
+#import "UIView+Toast.h"
 
 static NSString * const BaseURLString = @"http://123.57.141.249:8080/beautalk/";
 
@@ -59,6 +59,21 @@ static NSString * const BaseURLString = @"http://123.57.141.249:8080/beautalk/";
             failBlock(task,error);
         }
     }];
+}
+- (void)addBackButtonOnNav{
+    UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    button.frame = CGRectMake(0, 0, 30, 30);
+    [button setImage:[UIImage imageNamed:@"详情界面返回按钮"] forState:(UIControlStateNormal)];
+    [button addTarget:self action:@selector(returnViewController) forControlEvents:(UIControlEventTouchUpInside)];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = backItem;
+}
+
+- (void)returnViewController{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)showTostView:(NSString *)tostString{
+    [self.view makeToast:tostString duration:1.3 position:@"center"];
 }
 
 @end

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^loginBlock)();
+typedef void(^landingBlock)(NSDictionary *dic);
+
 @interface DJAddView : UIView
+
+/**登陆Block*/
+@property (strong,nonatomic) loginBlock login;
+/**注册Block*/
+@property (strong,nonatomic) landingBlock landing;
 
 @end

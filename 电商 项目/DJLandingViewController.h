@@ -10,4 +10,8 @@
 
 @interface DJLandingViewController : BaseViewController
 
+/**请求参数*/
+@property (strong,nonatomic) NSDictionary *parameterDic;
+
+
 @end

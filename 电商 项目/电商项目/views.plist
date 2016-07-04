@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>viewController</key>
-		<string>DJShopingCarViewController</string>
+		<string>DJBuyCarViewController</string>
 		<key>title</key>
 		<string>购物车</string>
 		<key>tabBarItemImage</key>

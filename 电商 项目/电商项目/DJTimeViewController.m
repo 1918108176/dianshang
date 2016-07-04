@@ -62,7 +62,7 @@
 }
 //新品团购
 - (DJScrollTableView *)tableView{
-    if (_tableView) {
+    if (!_tableView) {
         _tableView = [[DJScrollTableView alloc]initWithFrame:Rect(0, 282, VIEW_WIDTH, 0) style:UITableViewStylePlain];
         _tableView.isSingle = YES;
         __weak typeof(self)weakSelf = self;
@@ -179,8 +179,8 @@
             _tableView2.frame = group;
         }];
     } else {
-        _btnView.dfsButton.selected = YES;
         _btnView.xinButton.selected = NO;
+        _btnView.dfsButton.selected = YES;
         _backScrollView.contentSize = CGSizeMake(0, _tableView2.groupBuyListArray.count*175+282);
         [UIView animateWithDuration:0.5 animations:^{
             CGRect single = _tableView.frame;
@@ -200,7 +200,6 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if ([scrollView isEqual:_backScrollView]) {
         if (scrollView.contentOffset.y > 230) {
-            //            scrollView.contentSize
             CGRect twoBtnRect = _btnView.frame;
             twoBtnRect.origin.y = scrollView.contentOffset.y;
             _btnView.frame = twoBtnRect;

@@ -7,7 +7,7 @@
 //
 
 #import "DJGroupTableViewCell.h"
-#import "UIImageView+DJImage.h"
+#import "UIImageView+SDWebImage.h"
 
 @interface DJGroupTableViewCell ()
 
@@ -38,7 +38,8 @@
 
 
 - (void)setGroupBuyModel:(DJSecondModel *)groupBuyModel{
-    [_groupImage getImageForURL:groupBuyModel.ImgView];
+    _groupBuyModel = groupBuyModel;
+    [_groupImage downloadImage:groupBuyModel.ImgView place:[UIImage imageNamed:@"桌面"]];
 }
 
 - (UIImageView *)groupImage{

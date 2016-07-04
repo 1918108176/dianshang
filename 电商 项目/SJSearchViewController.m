@@ -7,31 +7,39 @@
 //
 
 #import "SJSearchViewController.h"
+#import "DJTableViewController.h"
 
-@interface SJSearchViewController ()
+@interface SJSearchViewController ()<UISearchBarDelegate>
+
+@property (strong,nonatomic) UISearchBar *goodsSearchBar;
 
 @end
 
 @implementation SJSearchViewController
 
+-(UISearchBar *)goodsSearchBar{
+    if (!_goodsSearchBar) {
+        _goodsSearchBar = [[UISearchBar alloc]initWithFrame:Rect(0, 0, VIEW_WIDTH, 40)];
+        [_goodsSearchBar becomeFirstResponder];
+        _goodsSearchBar.placeholder = @"输入要搜索的商品";
+        _goodsSearchBar.showsCancelButton = YES;
+        
+    }
+    return _goodsSearchBar;
+}
+
+
+
+
+
+
+
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

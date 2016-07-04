@@ -7,7 +7,7 @@
 //
 
 #import "DJSingleTableViewCell.h"
-#import "UIImageView+DJImage.h"
+#import "UIImageView+SDWebImage.h"
 #import "NSMutableAttributedString+Helper.h"
 @interface DJSingleTableViewCell ()
 
@@ -49,7 +49,9 @@
 #pragma mark -
 #pragma mark - 数据
 - (void)setSingleModel:(DJModel *)singleModel{
-    [_goodsImage getImageForURL:singleModel.CountryImg];
+    _singleModel = singleModel;
+    [_goodsImage downloadImage:singleModel.ImgView place:[UIImage imageNamed:@"桌面"]];
+    [_countryImage downloadImage:singleModel.CountryImg place:[UIImage imageNamed:@"桌面"]];
     _titleLabel.text = singleModel.Title;
     _contentLabel.text = singleModel.GoodsIntro;
     _priceLabel.attributedText = [NSMutableAttributedString makeStrikethroughAttributedString:singleModel.DomesticPrice :singleModel.Price rebateString:nil];
@@ -61,12 +63,12 @@
     __weak typeof(self)weakSelf = self;
     [_goodsImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.equalTo(CGSizeMake(142, 142));
-        make.left.equalTo(weakSelf.mas_left).offset(10);
+        make.left.equalTo(weakSelf.mas_left).offset(20);
         make.top.equalTo(weakSelf.mas_top).offset(12);
     }];
     [_countryImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.goodsImage.mas_top).offset(10);
-        make.right.equalTo(weakSelf.goodsImage.mas_left).offset(10);
+        make.top.equalTo(weakSelf.goodsImage.mas_top).offset(12);
+        make.right.equalTo(weakSelf.goodsImage.mas_left);
         make.size.equalTo(CGSizeMake(25, 20));
     }];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -109,6 +111,7 @@
 - (UIImageView *)goodsImage{
     if (!_goodsImage) {
         _goodsImage = [[UIImageView alloc]init];
+        _goodsImage.backgroundColor = [UIColor clearColor];
     }
     return _goodsImage;
 }
